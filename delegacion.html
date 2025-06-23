@@ -10,7 +10,7 @@
 		/*El selector universal es el asterisco *. Se refiere a todos los elementos, cualqueir cosa*/
 		*{
 			box-sizing: border-box;
-			/* overflow: auto; */
+			overflow: auto;
 			/* Esta propiedad hace que  */
 		}
 
@@ -37,8 +37,10 @@
 		section{
 			padding: 2em;
 		}
+
 		.bgimg{
 			height: 417px;
+			width: 100%;
 			background-image: url(assets/img/header_image.jpg);
 			background-repeat: no-repeat;
 		}
@@ -61,15 +63,15 @@
 
 		.content-box{
 			border-top: 4px solid #0C71C3;
-			margin: 1em;
+			padding: 1em;
 		}
 
 		.content-box-2{
-			margin: 1em;
+			padding: 1em;
 		}
 
 		.articles-box{
-			margin: 1em;
+			/* margin: 1em; */
 			padding: 2em;
 		}
 
@@ -99,13 +101,13 @@
 		<section class="col-12">
 			<h3>Noticias</h3>
 			<div class="content-box">
-				<div class="articles-box">
-					<article class="col-6">
+				<div class="articles-box col-6">
+					<article>
 						<img src="assets/img/alcazar_optimizada.jpe" width="100%">
 					</article>
 				</div>
-				<div class="articles-box">
-					<article class="col-6">
+				<div class="articles-box col-6">
+					<article>
 						<table>
 							<tr>
 								<td><img src="assets/img/leoruiz.png" width="100px" height="60px"></td>
@@ -132,8 +134,8 @@
 		<section class="col-12">
 			<h3>Proyectos</h3>
 			<div class="content-box">
-				<div class="articles-box">
-					<article class="col-3">
+				<div class="articles-box col-3">
+					<article>
 		            <p>Listas desordenadas:</p>
 		            	<ul>
 		            		<li>Elementos de lista desordenada 1.</li>
@@ -142,8 +144,8 @@
 		            	</ul>
 		         </article>
 				</div>
-				<div class="articles-box">
-					<article class="col-3">
+				<div class="articles-box col-3">
+					<article>
 							<!-- Atención a las diferentes etiquetas. Una es UL -unorderedList- y otra es OL -OrderedList- -->
 		            <p>Listas ordenadas o desordenadas:</p>
 		            <ol>
@@ -153,8 +155,8 @@
 		            </ol>
 		         </article>
 				</div>
-				<div class="articles-box">
-					<article class="col-3">
+				<div class="articles-box col-3">
+					<article>
 							<!-- También podemos anidar listas y mezclar tipos -->
 		            <p>Listas anidadas:</p>
 	            	<ol>
@@ -168,8 +170,8 @@
 	            	</ol>
 		         </article>
 				</div>
-				<div class="articles-box">
-		         <article class="col-3">
+				<div class="articles-box col-3">
+		         <article>
 		            	<!-- Son listas de cosas con la descripción de cada una de ellas. dl -descriptionList- -->
 		            <p>Lista de descripción</p>
 						<dl>
@@ -186,16 +188,16 @@
 		<section class="col-12">
 			<h3>Contacto</h3>
 			<div class="content-box">
-				<article class="col-6">
-					<div class="articles-box">
+				<article>
+					<div class="articles-box col-6">
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.3394314361794!2d-5.6451638!3d37.4763157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd128c9d92b58dbf%3A0xb908c1d92557a2c!2sServicio%20Andaluz%20de%20Empleo%20Oficina%20Carmona!5e0!3m2!1ses!2ses!4v1750412229457!5m2!1ses!2ses" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="ubicación de la Delegación de Formación" name="dinamic"></iframe>
 						<button><a href="https://www.elvisodelalcor.org/" target="dinamic">ElViso</a></button>
 						<button><a href="https://www.carmona.org/" target="dinamic">Carmona</a></button>
 						<button><a href="https://www.mairenadelalcor.org/es/" target="dinamic">Mairena</a></button>
 					</div>
 				</article>
-				<article class="col-6">
-					<div class="articles-box">
+				<article>
+					<div class="articles-box col-6">
 						<p>Si necesita ponerse en contacto con nosotros, no dude en rellenar el siguiente formulario:</p>
 							<table style="background-color: lightgrey; width: 70%; text-align: left;">
 								<tr>
@@ -226,7 +228,7 @@
 		<section class="col-12">
 			<h3>Imágenes</h3>
 			<div class="content-box">
-				<div class="articles-box">
+				<div class="articles-box col-6">
 					<article class="col-6">
 						<img src="assets/img/alcazar_optimizada.jpe" width="100%">
 					</article>
