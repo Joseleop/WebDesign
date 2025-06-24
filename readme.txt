@@ -1,3 +1,36 @@
+GIT COMMANDS:				WHAT									WHEN
+
+ git init				 	Crea un nuevo repositorio Git en		La primera vez, en un proyecto nuevo
+							la carpeta actual
+
+ git status					Muestra qué archivos han cambiado		Para saber si hay cambios sin guardar
+																	o pendientes
+
+ git add .					Añade todos los archivos modificados	Antes de hacer un commit
+							al "cambio"
+
+ git add archivo.html		Añade un solo archivo al "cambio"		Si no se quieren subir todos los cambios
+																	aún
+
+ git commit -m "mensaje"	Guarda el cambio con yuna descripción	Cada vez que terminas algo, lo guardas
+ 																	con una descripción (por ejemplo: "añade
+																	sección Contacto")
+
+ git log					Muestra el historial de commits			Para ver lo que se ha ido subiendo
+
+ git remote -v				Muestra la URL del repositorio remoto	Para saber si el proyecto está enlazado
+																	con Github
+
+ git push					Sube tus cambios al repositorio de		Después de hacer commit
+							Github
+
+ git pull					Descarga cambios desde Github a tu		Si se ha trabajado en otro PC o se han
+							PC										recibido cambios
+
+ git clone URL				Descarga un repositorio desde Github 	Cuando se quiere trabajar en un repo ya 
+							a tu PC.								creado desde otro equipo
+
+===================================================================================================================
 
 <!--Hay dos páginas muy relevantes a tener en cuenta SIEMPRE: w3schools.com y w3c.org-->
 
