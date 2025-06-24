@@ -5,110 +5,286 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trade</title>
     <style>
+    
+      *{
+			box-sizing: border-box;
+			overflow: auto;
+      }
       
-      
+      body{
+         margin: 0;
+         font-family: Arial, Helvetica, sans-serif;
+      }
 
-		body{
-			max-width: 960px;
+      header{
+         margin-top: 60px;
+      }
+
+
+      main{
+         max-width: 1200px;
+         margin: 0 50px;
       }
       
       footer {
-			background-color: lightgray;
-			height: 300;
+         font-size: 12px;
+	   }
+
+      div{
+         width: 100%;
+      }
+      
+		h1{
+			font-size: 1.5em;
 		}
 
-		.col-12{
-			width: 100%;
-			float: left;
+		h2{
+			font-size: 1.2em;
 		}
 
-		.col-6{
-			width: 50%;
-			float: left;
+		h3{
+			font-size: 1.1em;
 		}
 
-      .col-4{
-         width: 33%;
-         float: left;
+		p{
+			font-size: 0.9em;
+		}
+
+      a{
+         text-decoration: none;
       }
 
-		.col-3{
-			width: 25%;
+      hr{
+         border: none;
+         background: transparent;
+      }
+
+      article img{
+         width: 100%;
+      }
+
+      small {
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 0.6em;
+      }
+      
+      
+      .col-12{
+         width: 100%;
+         float: left;
+      }
+      
+      .col-8{
+         width: 66%;
+         float: left;
+      }
+      
+		.col-6{
+         width: 50%;
 			float: left;
-			/*Definimos unas clases en la hoja de estilo que después aplicamos en el html, según el tamaño del elemento en cuanto al ancho, usamos una clase u otra*/
 		}
+      
+      .col-4{
+         width: 33.3333%;
+         float: left;
+      }
+      
+		.col-3{
+         width: 25%;
+			float: left;
+		}
+      
+      .section-bg{
+         background-color: #ccc;
+      }
+      
+      #question{
+         text-align: center;
+			margin-top: 0;
+         padding-top: 4em;
+         padding-bottom: 4em;
+      }
+            
+      #action-call{
+         text-align: center;
+      }
+      
+      #nav-bar{
+         text-align: right;         
+         padding: 1rem 2rem;
+         float: right;
+      }
+      
+      #web-title{
+			margin-left: 15px;
+         float: left;
+      }
+      
+      #nav-bar a {
+         color: black;
+         text-decoration: none;
+         font-weight: lighter;
+         margin-left: 10px;
+         margin-right: 10px;
+      }
+      
+      #nav-bar a:hover {
+         text-decoration: underline;
+      }
+      
+      #sign-up{
+         background-color: white;
+         border: 1px solid grey;
+         border-radius: 4px;
+         padding: 0.5em 2em;
+      }
+      
+      #free-trial{
+         background-color: green;
+         color: white;
+         border: 1px solid green;
+         border-radius: 4px;
+         padding: 1em 2em 1em 2em;
+      }
 
+      /* #contact-form{
+         text-align: center;
+      } */
+      
       @media only screen and (max-width:700px) {
-  			 /*For mobile phones: */
-  			.col-12, .col-6, .col-3 {
-    			width: 100%;
-    		}	
-  		}
+         /*For mobile phones: */
+         .col-12, .col-8, .col-6, .col-4, .col-3 {
+            width: 100%;
+         }	
+      }
+      
+      section{
+         /* border: 2px solid green; */
+         margin: 20px 0;
+         /* clear: both; */
+      }
+      
+      article{
+         /* border: 1px solid lightpink; */
+         padding: 1em;
+      }
 
-    </style>
+      </style>
 </head>
 <body>
-    <header>
-        <h1>TRADE</h1>
-        <nav> <a href="">Link 1 </a><a href="">Link 2 </a><a href="">Link 3 </a> <a href="">Link 4 </a><button id="sign-up">Sign Up</button></nav>
-    </header>
-    <main>
-        <section>
-            <h2>Ready to get started</h2>
-            <article> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptates error a repellendus consequatur vitae
-            </article>
-            <button id="free-trial">Start free trial</button>
-        </section>
-        <section>
-            <h2>Yout Best Value Proposition</h2>
+   <header>
+        <h1 id="web-title">TRADE</h1>
+        <nav id="nav-bar"> <a href="">Link 1 </a><a href="">Link 2 </a><a href="">Link 3 </a> <a href="">Link 4 </a><button id="sign-up">Sign Up</button></nav>
+   </header> 
+   <section class="col-12, section-bg" id="question">
+      <h2>Ready to get started?</h2>
+      <div class="col-4"><hr></div>
+      <article class="col-4"> 
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit dolores voluptates error a repellendus consequatur vitae</p>
+         <button id="free-trial"><b>Start free trial</b></button>
+      </article>
+      <div class="col-4"><hr></div>
+   </section>
+   <main>
+      <section class="col-12">
+      	<div class="col-3"><hr></div>
+			<div id="action-call" class="col-6">
+         	<h2>Yout Best Value Proposition</h2>
             <article>
-               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad soluta vel ut voluptatibus repellat debitis beatae reiciendis non ratione laborum blanditiis aliquam quia nam.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad soluta vel ut voluptatibus repellat debitis beatae reiciendis non ratione laborum blanditiis aliquam quia nam.</p>
             </article>
-            <article>
-               <a href=""><img src="assets/img/ALCAZAR_optimizada.jpe" alt="Imagen del alcazar"></a>
-               <h3><a href="">Lorem ipsum dolor sit, amet consectetur adipisicing elit</a></h3>
-               <small><a href="">Learn More</a></small>
-            </article>
-            <article>
-               <a href=""><img src="assets/img/img01.jpg" alt="Imagen 01"></a>
-               <h3><a href="">Lorem ipsum dolor sit, amet consectetur adipisicing elit</a></h3>
-               <small><a href="">Learn More</a></small>
-            </article>
-            <article>
-               <a href=""><img src="assets/img/leoruiz.png" alt="Imagen de HTML"></a>
-               <h3><a href="">Lorem ipsum dolor sit, amet consectetur adipisicing elit</a></h3>
-               <small><a href="">Learn More</a></small>
-            </article>
+         </div>
+         <div class="col-3"><hr></div>
+      </section>
+      <section class="col-12">
+               <article class="col-4">
+                  <a href=""><img src="assets/img/html5.png" alt="Imagen de HTML"></a>
+                  <h3><a href="">Lorem ipsum dolor sit, amet consectetur adipisicing elit</a></h3>
+                  <small><a href="">Learn More</a></small>
+               </article>
+               <article class="col-4">
+                  <a href=""><img src="assets/img/html5.png" alt="Imagen de HTML"></a>
+                  <h3><a href="">Lorem ipsum dolor sit, amet consectetur adipisicing elit</a></h3>
+                  <small><a href="">Learn More</a></small>
+               </article>
+               <article class="col-4">
+                  <a href=""><img src="assets/img/html5.png" alt="Imagen de HTML"></a>
+                  <h3><a href="">Lorem ipsum dolor sit, amet consectetur adipisicing elit</a></h3>
+                  <small><a href="">Learn More</a></small>
+               </article>
+         </section>
+        <section class="col-12">         
+            <div class="col-12">
+               <article class="col-6">
+                  <div>
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.3394314361794!2d-5.6451638!3d37.4763157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd128c9d92b58dbf%3A0xb908c1d92557a2c!2sServicio%20Andaluz%20de%20Empleo%20Oficina%20Carmona!5e0!3m2!1ses!2ses!4v1750412229457!5m2!1ses!2ses" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="ubicación de la Delegación de Formación"></iframe>
+                  </div>
+               </article>
+               <article class="col-6">
+                  <div id="contact-form">
+                     <form action="">
+                        <label for="fname"></label><br>
+                        <input type="text" id="fname" name="fname" placeholder="Your name"><br>
+                     
+                        <label for="lname"></label><br>
+                        <input type="text" id="lname" name="lname" placeholder="Your last name"><br>
+                        
+                        <label for="textm"></label><br>
+                        <textarea name="textm" id="textm" rows="10" cols="30" placeholder="Write your message"></textarea><br>
+                        
+                        <input type="submit" value="Submit">
+                     </form> 
+                  </div>
+               </article>
+            </div>
         </section>
     </main>
-    <footer>
-      <article>
-
+    <footer class="section-bg">
+      <article class="col-4">
+         <h1>TRADE</h1>
+         <p>2010 - 2020</p>
+         <p><a href="">Privacy</a> - <a href="">Terms</a></p>
       </article>
-         <h2>Product</h2>
-         <ul>
-            <li>Product</li>
-            <li>Product</li>
-            <li>Product</li>
-         </ul>
-         <h2>Features</h2>
-         <ul>
-            <li>Features</li>
-            <li>Features</li>
-            <li>Features</li>
-         </ul>
-         <h2>Resources</h2>
-         <ul>
-            <li>Resources</li>
-            <li>Resources</li>
-            <li>Resources</li>
-         </ul>
-         <h2>Company</h2>
-         <ul>
-            <li>Company</li>
-            <li>Company</li>
-            <li>Company</li>
-         </ul>
+      <article class="col-8">
+         <div class="col-3">
+            <!-- <h2>Product</h2> -->
+            <ul>
+               <li><h2>Product</h2></li>
+               <li>Product</li>
+               <li>Product</li>
+               <li>Product</li>
+            </ul>
+         </div>
+         <div class="col-3">
+            <!-- <h2>Features</h2> -->
+            <ul>
+               <li><h2>Features</h2></li>
+               <li>Features</li>
+               <li>Features</li>
+               <li>Features</li>
+            </ul>
+         </div>
+         <div class="col-3">
+            <!-- <h2>Resources</h2> -->
+            <ul>
+               <li><h2>Resources</h2></li>
+               <li>Resources</li>
+               <li>Resources</li>
+               <li>Resources</li>
+            </ul>
+         </div>
+         <div class="col-3">
+            <!-- <h2>Company</h2> -->
+            <ul>
+               <li><h2>Company</h2></li>
+               <li>Company</li>
+               <li>Company</li>
+               <li>Company</li>
+            </ul>
+         </div>
+      </article>
+         
+         
     </footer>
 </body>
 </html>
