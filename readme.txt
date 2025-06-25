@@ -105,3 +105,30 @@ Dentro de <style> en el head:
 	Aunque el que nos interesa es el em.
 
 	Otra medida relativa es el porcentaje
+
+Hablamos de imágenes:
+
+Tenemos tres aspectos a tener en cuenta:
+	- Tamaño, es la cantidad de pixxeles de alto por los de ancho.
+	- Profundiad de color, es la cantidad de valores o colores que puede tomar un pixel. Puede ser 1 bit, 256 colores o color verdadero.
+	- Resolución, son los ppp (pixeles por pulgada):
+		· 72- 96 ppp -> para pantalla
+		· 150 ppp -> para impresión en impresora "doméstica"
+		· 300 ppp -> para enviar a imprenta
+
+	* Lo normal es que en pantalla el ojo humano no pueda ver más de 96 ppp
+
+Si, por ejemplo tenemos un ancho máximo de pantalla en nuestra web de 1200 px, no queremos para nada una imagen de 5000 px. Por eso habría que convertirla.
+
+	También hay otro aspecto a tener en cuenta:
+	- FORMATO: es la forma que tiene el programa de comprimir y convertir la imagen.
+		.tiff es la imagen en real, con toda su información de cada pixel. Es muy pesada
+		.gif solo tiene 256 colores (se usa para cosas que requieran pocos colores -logos, gráficos, etc). puede almacenar un color transparente.
+		.png permite crear transferencia. Es el que normalmente se usa en HTML
+		.jpg en máxima calidad ocupa y pesa demasiado, también. Almacena una "operacion matematica" y, cuando lo abres, convierte toda la imagen en su forma real (por eso ocupa casi como el tiff). Con las compresiones, va "reduciendo" la operación matematica
+
+Es con programas de edición de imágenes (como Photoshop, GIMP) con lo que podemos modificar, cambiar, editar, guardar las imagenes.
+
+Todo esto son las imágenes bmp (mapa de bits)
+
+También existen las imágenes vectoriales. Son imágenes en código que se crean en un eje de coordenadas, en vectores.
