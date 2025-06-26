@@ -1,59 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confección y publicación Web</title>
-    
-    <link rel="stylesheet" href="style.css">
-
-    <style>
-        /* Encuadre de las secciones para saber qué pinta */
-        section{
-         border: 1px solid green;
-        }
-      
-        article{
-        border: 1px solid red;
-        }
-        /* Fin del encuadre de secciones */
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Página de Práctica Completa</title>
 </head>
 <body>
-	<header>
-		<nav></nav>
-   </header>
-   <main>
-		<section class="col-12">
-			<article class="col-6">
-                <img src="assets/img/html5.png" alt="" width="250" height="250">
-            </article>
-            <article class="col-6">
-                <ol>
-                    <li>Practice 01</li>
-                    <li>Practice 01</li>
-                    <li>Practice 01</li>
-                    <li>Practice 01</li>
-                </ol>
-            </article>
-		</section>
-		<section class="col-12">
-            <article class="col-6">
-                <ol>
-                    <li>Practice 01</li>
-                    <li>Practice 01</li>
-                    <li>Practice 01</li>
-                    <li>Practice 01</li>
-                </ol>
-            </article>
-			<article class="col-6">
-                <img src="assets/img/html5.png" alt="" width="250" height="250">
-            </article>
-        </section>
 
-   </main>
-	<footer>
+  <!-- Encabezado -->
+  <header>
+    <h1>Mi Página Web de Práctica</h1>
+    <p>Un sitio para aprender <strong>HTML</strong>, <em>CSS</em> y <mark>JavaScript</mark></p>
+  </header>
 
-	</footer>
+  <!-- Navegación principal -->
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#articulos">Artículos</a></li>
+      <li><a href="#multimedia">Multimedia</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Sección de bienvenida -->
+    <section id="inicio">
+      <h2>Bienvenido</h2>
+      <p>Este es un párrafo de prueba. Aquí puedes poner algo como una introducción.</p>
+      
+      <!-- Imagen con figura -->
+      <figure>
+        <img src="https://via.placeholder.com/400x200" alt="Imagen de bienvenida">
+        <figcaption>Imagen de ejemplo para la sección de bienvenida</figcaption>
+      </figure>
+    </section>
+
+    <!-- Artículos -->
+    <section id="articulos">
+      <h2>Artículos recientes</h2>
+
+      <article>
+        <h3>Título del artículo 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur <strong>adipiscing elit</strong>. Código ejemplo: <code>&lt;section&gt;</code></p>
+      </article>
+
+      <article>
+        <h3>Título del artículo 2</h3>
+        <p>Praesent <em>commodo</em> cursus magna, vel scelerisque nisl consectetur et.</p>
+      </article>
+    </section>
+
+    <!-- Multimedia -->
+    <section id="multimedia">
+      <h2>Contenido Multimedia</h2>
+
+      <!-- Imagen adicional -->
+      <img src="https://via.placeholder.com/300x150" alt="Otra imagen ilustrativa" />
+
+      <!-- Video incrustado (YouTube) -->
+      <h3>Video de ejemplo</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/kUMe1FH4CHE" 
+        title="YouTube video" frameborder="0" allowfullscreen></iframe>
+
+      <!-- Mapa incrustado (Google Maps) -->
+      <h3>Ubicación en Google Maps</h3>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.578274741488!2d-0.375!3d39.4699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f3e3123a3f5%3A0xa4c2b22c9bbf25a2!2sValencia!5e0!3m2!1ses!2ses!4v1614364943732" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </section>
+
+    <!-- Barra lateral -->
+    <aside>
+      <h2>Datos curiosos</h2>
+      <ul>
+        <li>HTML significa <mark>HyperText Markup Language</mark></li>
+        <li>CSS se usa para estilos visuales</li>
+        <li>JavaScript permite interacción</li>
+      </ul>
+    </aside>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto">
+      <h2>Formulario de contacto</h2>
+      <form action="#" method="post">
+        <label for="nombre">Nombre:</label><br />
+        <input type="text" id="nombre" name="nombre" /><br />
+
+        <label for="email">Correo electrónico:</label><br />
+        <input type="email" id="email" name="email" /><br />
+
+        <label for="mensaje">Mensaje:</label><br />
+        <textarea id="mensaje" name="mensaje" rows="4" cols="40"></textarea><br />
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+
+    <!-- Tabla -->
+    <section>
+      <h2>Tabla de datos de usuarios</h2>
+      <table style="border: 1;">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>País</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Carlos</td>
+            <td>28</td>
+            <td>España</td>
+          </tr>
+          <tr>
+            <td>Lucía</td>
+            <td>33</td>
+            <td>Argentina</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Mi Página de Práctica. Todos los derechos reservados.</p>
+    <p><a href="#">Volver arriba</a></p>
+  </footer>
+
 </body>
 </html>
