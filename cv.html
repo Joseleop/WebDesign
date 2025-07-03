@@ -1,25 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Leo Ruiz</title>
-	<style>
-		
-	</style>
+  <meta charset="UTF-8">
+  <title>Ejemplo: * vs body</title>
+  <style>
+    /* Reset general con selector universal */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Estilo solo para el <body> */
+    body {
+      background-color: #f0f0f0;
+      color: #333;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Estilos para ver cómo se comportan otros elementos */
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    div {
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
-	<header>
-		
-	</header>
-	<aside>
-		
-	</aside>
-	<main>
-		
-	</main>
-	<footer>
-		
-	</footer>
+  <h1>Comparativa: * vs body</h1>
+  <p>Este texto se beneficia del fondo y fuente aplicados al <code>body</code>.</p>
+  <div>
+    <p>Este div tiene padding y borde, y también se beneficia del reset global con <code>*</code>.</p>
+  </div>
 </body>
 </html>
