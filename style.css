@@ -72,6 +72,12 @@
          font-size: 1.2em;
 		}
 
+        h2 span{
+            color: blueviolet;
+            font-style: italic;
+            font-size: 2em;
+        }
+
 		h3{
 			font-size: 1.1em;
 		}
