@@ -132,3 +132,23 @@ Es con programas de edición de imágenes (como Photoshop, GIMP) con lo que pode
 Todo esto son las imágenes bmp (mapa de bits)
 
 También existen las imágenes vectoriales. Son imágenes en código que se crean en un eje de coordenadas, en vectores.
+
+
+=====MODELO DE CAJAS=====
+
+Cada selector que yo declare en css crea una "caja" del elemento.
+Si por ejemplo declaramos un head{...}, en la página me está creando una caja contenedora.
+
+Los que participan en el modelo de caja son:
+
+- Borde (Border).
+- Margen (Margin).
+- Contenido (Content)
+- Padding.
+
+Podemos definir y valorar cada uno por separado y, dentro de ello, podemos tomarlos todos de manera general (margin:{3px;}). O podemos tomarlos de manera separada (margin: 3px,2px, 3px, 2px;)
+
+
+PSEUDO-CLASES:
+
+
