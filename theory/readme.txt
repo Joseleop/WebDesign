@@ -151,4 +151,14 @@ Podemos definir y valorar cada uno por separado y, dentro de ello, podemos tomar
 
 PSEUDO-CLASES:
 
+FUENTES:
+
+En CSS se trabaja con dos estilos:
+- Text: es el formato del texto en sí.
+- Font: es el tipo de letra, la fuente. las fuentes se dividen en familias.
+	· Las romanas o con serifa.
+	· Humanistas o sin serifa.
+	· Script o brush, son letras para simulan la escritura a mano
+	· Las de diseño o fantasy
+	· Monoespaciadas, pueden ser romanas, sin serifa... vienen de las máquinas de escribir, en estas, el espacio de cada letra es igual (la m y la i ocupan el mismo espacio).
 

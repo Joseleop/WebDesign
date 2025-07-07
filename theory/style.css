@@ -26,7 +26,7 @@
 /* Fin de Gestor de columnas */
       *{
 			box-sizing: border-box;
-			overflow: auto;
+			/* overflow: auto; */
       }
       
       body{
@@ -36,7 +36,6 @@
 
       header{
          margin-top: 60px;
-         background-color: yellow !important;
       }
 
 
@@ -218,6 +217,26 @@
       /* #contact-form{
          text-align: center;
       } */
+
+      #font-01{
+         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+
+      #font-02{
+         font-family:sofia, fantasy;
+      }
+
+      #font-03{
+         font-family:comfortaa, sans-serif ;
+      }
+
+      #font-04{
+         font-family:trirong, sans-serif;
+      }
+
+      #font-05{
+         font-family:audiowide, sans-serif;
+      }
       
       @media only screen and (max-width:700px) {
          /*For mobile phones: */
