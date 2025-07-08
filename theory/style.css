@@ -55,7 +55,7 @@
       }
       
       article{
-         border: 1px solid lightpink;
+         /* border: 1px solid lightpink; */
          padding: 1em;
       }
 
@@ -70,12 +70,6 @@
 		h2{
          font-size: 1.2em;
 		}
-
-      h2 span{
-         color: blueviolet;
-         font-style: italic;
-         font-size: 2em;
-      }
 
 		h3{
 			font-size: 1.1em;
@@ -120,10 +114,19 @@
          font-family: Arial, Helvetica, sans-serif;
          font-size: 0.6em;
       }
-            
+
+      iframe{
+         width: 100%;
+      }
+
+      footer ul{
+         list-style-type: none;
+         padding: 0;
+      }
+      
             
       .section-bg{
-         background-color: #ccc;
+         background-color: #eee;
       }
       
       .box-1{
@@ -242,6 +245,9 @@
          /*For mobile phones: */
          .col-12, .col-8, .col-6, .col-4, .col-3 {
             width: 100%;
-         }	
+         }
+         .main-nav{
+            width: 100%;
+         }
       }
 

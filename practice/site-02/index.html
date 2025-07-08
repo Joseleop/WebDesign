@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es.Es">
+<!-- El atributo lang es la etiqueta html sirve para que el navegador comprenda que escribimos en español y nos muestres los caracteres adecuados, como tildes, ñ, etc.-->
+<head>
+<!-- La etiqueta head aporta información al navegador. No se pinta en la web como tal. Si acaso la etiqueta title que añade el título a la pestaña del navegador-->
+	<meta charset="utf-8">
+<!-- Meta es otra etiqueta que no necesita cierra, es un Empty Elements-->
+<!-- el atributo charset "restringe" el uso del teclado al nuestro. Podemos usar aperturas de interrogación, ñ o caracteres latinos. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+   <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+	<title>Ejemplos</title>
+</head>
+<body style="font-family: consolas;">
+<!-- Los colores en HTM pueden elegirse entre tres modos: RGB, Hexadecimal, nombre (de un listado) -->
+<!-- Los estilos pueden incluirse en el archivo html, son los estilos "EN LÍNEA", pero no es lo recomendable, ya que implica repetirlo en cada etiqueta que necesites lo mismo. Para eso están las hojas de estilo o CSS-->
+
+	<header style="border-bottom: 2px solid darkred; font-family: papyrus;">
+		<section>
+			<article>
+				<h1 style="border-bottom: 2px solid darkred; font-family: papyrus;"> Hello World! </h1>
+			</article>
+			<article>
+				<h1 style="border-bottom: 2px solid darkred; font-family: papyrus;"> Let's go to HTML! </h1>
+			</article>
+		</section>
+	</header>
+
+	<nav>
+		<p>Elemento de menú | Otro elemento | Tercer elemento</p>
+	</nav>
+
+	<main>
+		<section>
+			<article>
+            <p><b>Este texto está en negrita.</b></p>
+            <p><i>Y este texto está en cursiva.</i></p>
+            <p>También se pueden poner textos en <sub>subíndice</sub> o en <sup>superíndice</sup></p>
+			</article>
+		</section>
+		<section>
+			<article>
+				<p> <a href="http://www.google.com" target="new">Abrir ventana nueva</a> </p>
+            <a href="http://google.com">Esto es uno de los tipos de enlace</a>
+            <p>Puedes poner integrados en la etiqueta p más <a href="http://google.com">Enlaces</a></p>
+
+            <p>Enlace a una <a href="index.html" target="new">Página interna de la web</a> </p>
+
+				<!-- También podemos elegir entre abrir el enlace en una nueva pestaña o en la misma con el atributo target="new"-->
+
+            <p id="volverarriba">Enlace a una <a href="#footer">Sección interna</a> dentro de la misma página de la propia web (hacia el footer)</p>
+
+				<!-- Para hacer este tipo de enlace, primero hay que identificar la sección a la que queremos ir. Con un id="" -->
+				<!-- Hemos enlazado al footer. Observar que el footer tiene el id=footer. En este caso se llama footer, pero puede tener cualquier id, eso sí, solo puede haber un id por-->
+				<!-- Si queremos "volver arriba" desde la sección en la que estamos, habría que hacer lo mismo: id al div al que queremos volver y un enlace interno desde la sección. -->
+			</article>
+		</section>
+			</article>
+		</section>
+
+		<section class="col-12">
+			<article class="col-3">
+            <p>Listas ordenadas o desordenadas:</p>
+            	<ul>
+            		<li>Elementos de lista desordenada 1.</li>
+            		<li>Elementos de lista desordenada 2.</li>
+            		<li>Elementos de lista desordenada 3.</li>
+            	</ul>
+         </article>
+			<article class="col-3">
+					<!-- Atención a las diferentes etiquetas. Una es UL -unorderedList- y otra es OL -OrderedList- -->
+            	<ol>
+            		<li>Elementos de lista ordenada 1 </li>
+            		<li>Elementos de lista ordenada 2 </li>
+            		<li>Elementos de lista ordenada 3 </li>
+            	</ol>
+         </article>
+			<article class="col-3">
+					<!-- Atención a las diferentes etiquetas. Una es UL -unorderedList- y otra es OL -OrderedList- -->
+            	<ol>
+            		<li>Elemento de listas anidadas </li>
+            			<ul>
+            				<li>Elemento uno</li>
+            				<li>Elemento dos</li>
+            			</ul>
+            		<li>Elementos de lista ordenada 2 </li>
+            		<li>Elementos de lista ordenada 3 </li>
+            	</ol>
+         </article>
+         <article class="col-3">
+            	<p>También podemos crear listas de definición</p>
+            	<!-- Son listas de cosas con la descripción de cada una de ellas. dl -descriptionList- -->
+            	<p>Lista de descripción</p>
+					<dl>
+  						<dt>Coffee</dt>
+  							<dd>- black hot drink</dd>
+  						<dt>Milk</dt>
+  							<dd>- white cold drink</dd>
+					</dl>
+			</article>
+		</section>
+		<hr>
+		<section>
+			<h3> IMÁGENES </h3>
+		</section>
+		<section>
+			<article>
+    			<p>Imagen con ruta relativa-> desde mi pc o servidor</p>
+    			<img src="assets/img/leoruiz.png" width="300" height="200" alt="imagen de HTML5">		
+			</article>
+			<article>
+				<!-- También puedes poner una ruta absoluta (URL) para que la busque en internet. Así no ocupa espacio en mi servidor ni tengo que "pagar" por transferir datos cada vez que se muestre la foto en la pantalla-->
+				<p>Imagen con ruta absoluta</p>
+				<img src="https://cdn.pixabay.com/photo/2018/05/03/21/49/html5-3372584_960_720.png" width="100%" height="200" alt="imagen de HTML5" title="Imagen HTML5">
+				<!-- El atributo title de arriba crea un "tooltip", el pequeño cuadro de texto que aparece en la pantalla cuando el cursor pasa por encima del elemento. Ten en cuenta que no solo puede usarse en imágenes, sino en cualquier elemento. -->
+
+				<!-- El atributo width puede añadirse en pixeles reales o en porcentaje de la caja en la que lo contenga. Arriba está al 100%, por tanto aparece la imagen ocupando el 100 % del ancho del body-->
+
+				<!-- el atributo alt es importante por 3 razones: 
+				1. Para el posicionamiento SEO
+				2. Para que, si no se muestra, no se vea una imagen de "foto no encontrada"
+				3. Si alguien tiene un plugin de audio descripción, que le describa la imagen. -->
+			</article>
+		</section>
+
+		<h3>
+			<section>
+				<p style="border-bottom: 2px solid darkred; font-family: papyrus;">Imágenes de fondo</p>
+			</section>
+		</h3>
+			<div class="bgimg">
+<!-- Para crear estilos tenemos varias formas: con los SELECTORES, las CLASES y los IDENTIFICADORES -->
+				<p style="color: white;">Ejemplo de imagen de fondo</p>
+				<p style="color: white;">Este texto está escrito sobre la imagen de fondo</p>
+			</div>
+		<section>
+			<h3>Tablas</h3>
+				<article>
+					<table>
+						<!-- Si queremos que la tabla tenga una cabecera, el primer td (datos de tabla) sería th (table header) -->
+						<!-- <tr>
+							<td>Plato</td>
+							<td>Bebida</td>
+							<td>Postre</td>
+						</tr> -->
+						<tr>
+							<th>Plato</th>
+							<th>Bebida</th>
+							<th>Postre</th>
+						</tr><tr>
+							<td>Filete</td>
+							<td>Cerveza</td>
+							<td>Café</td>
+						</tr>
+						<tr>
+							<td>Ensalada</td>
+							<td>Agua</td>
+							<td>Fruta</td>
+						</tr>
+					</table>
+				</article>
+				<br>
+				<article>
+					<!-- A continuación vemos lo que ocurre con el atributo colspan: une dos columnas -->
+					<table>
+						<tr>
+							<th>Entrante</th>
+							<th colspan="2">Menú</th>
+						</tr>
+						<tr>
+							<td>Ensalada</td>
+							<td>Filete</td>
+							<td>Patatas</td>
+						</tr>
+						<tr>
+							<td>Gazpacho</td>
+							<td>Macarrones</td>
+							<td>Queso</td>
+						</tr>
+					</table>
+				</article>
+				<br>
+				<article>
+					<!-- A continuación vemos lo que ocurre con el atributo rowspan: une dos filas  -->
+					<table>
+						<tr>
+							<th>Nombre</th>
+							<th>Número</th>
+							<th>Correo</th>
+						</tr>
+						<tr>
+							<td rowspan="2">Juan</td>
+							<td>617345745</td>
+							<td>correo.gemal</td>
+						</tr>
+							<td>614562745</td>
+							<td>correo.gemal</td>
+						</tr>
+							<td>Jose</td>
+							<td>617345745</td>
+							<td>correo.gemal</td>
+						</tr>
+							<td>Manuel</td>
+							<td>617345745</td>
+							<td>correo.gemal</td>
+						</tr>
+					</table>
+				</article>
+				<br>
+				<article>
+					<!-- También se pueden combinar los dos atributos colspan y rowspan  -->
+					<table>
+						<tr>
+							<th>Nombre</th>
+							<th colspan="2">Contacto</th>
+						</tr>
+						<tr>
+							<td rowspan="2">Juan</td>
+							<td>617345745</td>
+							<td>correo.gemal</td>
+						</tr>
+							<td>614562745</td>
+							<td>correito.gemal</td>
+						</tr>
+							<td>Jose</td>
+							<td>617345745</td>
+							<td>correcorre.gemal</td>
+						</tr>
+							<td>Manuel</td>
+							<td>617345745</td>
+							<td>coro.gemal</td>
+						</tr>
+					</table>
+				</article>
+				<br>
+				<!-- Las tablas también pueden tener establecidos en tamaño. Para que no crezcan según el tamaño del contenido. Ocurre igual con las filas y columnas -->
+				<article>
+					<table style="background-color: white; width: 70%; text-align: left;">
+						<tr>
+							<th style="width: 30%">Nombre</th>
+							<th colspan="2" style="width: 70%">Contacto</th>
+						</tr>
+						<tr>
+							<td rowspan="2">Juan</td>
+							<td>617345745</td>
+							<td>correo.gemal</td>
+						</tr>
+							<td>614562745</td>
+							<td>correito.gemal</td>
+						</tr>
+							<td>Jose</td>
+							<td>617345745</td>
+							<td>correcorre.gemal</td>
+						</tr>
+							<td>Manuel</td>
+							<td>617345745</td>
+							<td>coro.gemal</td>
+						</tr>
+					</table>
+				</article>
+		</section>
+		<hr>
+		<section>
+			<!-- Los iframes sirven para incluir el contenido de otra página en nuestra página: el mapa de google, un artículo, otra página (de la misma o de otra),etc. -->
+			<article>
+				<h3>iframes</h3>
+			</article>
+			<article>
+				<p>Mapa del parador de Carmona</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d101328.14172274398!2d-5.715140817931317!3d37.472421190236105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0xd128c8fd61a61bd%3A0x6092f2f7564c772d!2sAlc%C3%A1zar%20s%2Fn%2C%2041410%20Carmona%2C%20Sevilla!3m2!1d37.4724498!2d-5.6327397999999995!5e0!3m2!1ses!2ses!4v1750324334886!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa del parador de carmona"></iframe>
+			</article>
+			<article>
+				<h3>Contenido dinámico del iframe</h3>
+				<!-- Con el contenido dinámico de un iframe puedes hacer que ciertos enlaces <a> se abran en el iframe. Llamando al iframe con un atributo name y dirigiendo con el atributo target hacia el name -->
+				<iframe src="https://carmona.org/" height="600" width="100%" title="Web del ayuntamiento de Carmona" name="dinamic"></iframe>
+				<button><a href="https://www.elvisodelalcor.org/" target="dinamic">ElViso</a></button>
+				<button><a href="https://www.carmona.org/" target="dinamic">Carmona</a></button>
+				<button><a href="https://www.mairenadelalcor.org/es/" target="dinamic">Mairena</a></button>
+					<!-- No hace falta que la dirección sea una página exterior. También puede ser a una página o archivo interior -->
+				<button><a href="assets/img/leoruiz.png" target="dinamic">Imagen HTML5</a></button>
+				<button><a href="index.html" target="dinamic">index</a></button>
+				<hr style="color: green; ">
+			</article>
+		</section>
+		<section>
+			<h2>Etiquetas Pre y Code</h2>
+			<!-- Con la etiqueta pre podemos pintar el texto preformateado, esto es, que no adapte al texto según HTML, como la lectura de espacios, que da igual los espacios que tenga un texto, HTML solo mete 1. Por ejemplo, con p, no van a aparecer todos los espacios que en el lorem ipsum continuación se muestran -->
+			<article>
+				<p style="text-align: left;">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incidi         dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. E
+
+
+				xcepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt
+
+				 ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation u
+
+
+
+				llamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum      dolore eu fugiat nu           lla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<!-- Con la etiqueta pre, el texto se pintará sin ningún formato. Ni tipo de letra, ni espacios incluidos, ni saltos de página, etc. salvo que se aplique el estilo directamente a la etiqueta mediante style-->
+				<pre style="text-align: left;">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incidi         dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. E
+
+
+				xcepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt
+
+				 ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation u
+
+
+
+				llamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum      dolore eu fugiat nu           lla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</pre>
+				
+				<!-- Qué hace: Indica que el contenido es código fuente. Por defecto, lo muestra con una fuente monoespaciada.Para qué se usa: Para destacar pequeñas partes de código en línea (dentro de un párrafo, por ejemplo). -->
+
+				<p>Para imprimir en JavaScript, usa <code>console.log()</code>.</p>
+			</article>
+		</section>
+
+		<!-- Agregamos el favicon. El icono que sale en la pestaña del navegador. Esto se incluye dentro del head -->
+
+		<section>
+			<article>
+				<h3>PICTURE</h3>
+				<!-- esta etiqueta se usa para reescalar una imagen según la pantalla en la que se está mostrando.
+				También se usa para cambiar una imagen por otras según el tamaño. PE: si la pantalla tiene 1000px, muestra un coche; si tiene 500, muestra una moto; y si tiene 200, es una bici.
+				Aunque esto último no tiene mucho sentido, sería más probable usarlo para que cargue la misma imagen en diferentes tamaños, por ejemplo -->
+				<!-- Hay que tener en cuenta que para usar este elemento debe estar incluido en el head el viewport y demás... -->
+				<a href="https://www.w3schools.com/html/html_images_picture.asp" target="new">Documentación</a>
+			</article>
+		</section>
+	</main>
+	<footer id="footer"><a href="#volverarriba">Volver arriba</a>
+		<p>Este es el footer</p>
+
+	</footer>
+</body>
+
+</html>
