@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Test</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 1em;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #013E7C;
+      z-index: 1000;
+      padding: 1em;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 1em;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5em 1em;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+    }
+
+    main {
+      padding: 2em;
+    }
+
+    section {
+      height: 2000px;
+      background: #eee;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TRADE</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <p>Haz scroll... el menú debería quedarse pegado arriba.</p>
+    </section>
+  </main>
+</body>
+</html>
