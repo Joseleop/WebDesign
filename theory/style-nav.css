@@ -1,14 +1,24 @@
-/* Reset general */
+/*========================= 
+RESET Y ESTILO GENERAL
+=========================*/
 * {
   box-sizing: border-box;
 }
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* NAV principal */
+h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.5em;
+}
+
+/* ========================
+NAV PRINCIPAL 
+======================== */
 nav {
   position: sticky;
   top: 0;
@@ -53,17 +63,20 @@ nav li a:hover {
 }
 
 /* Dropdown */
-/* .dropdown-content {
-  display: none;
+.dropdown-content {
+  /* display: none; */
+  /*Con esta línea, la siguiente y la última conseguimos que se haga una transición y no aparezca abruptamente*/
+  opacity: 0;  
+  visibility: hidden;
   position: absolute;
-  top: 100%;  */
-  /* se coloca justo debajo del <li> */
-  /* left: 0;
+  top: 100%;
+  left: 0;
   background-color: #013E7C;
   min-width: 160px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 1;
-} */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
 
 .dropdown-content a {
   padding: 1em 0.7em;
@@ -77,23 +90,9 @@ nav li a:hover {
 }
 
 /* Mostrar el dropdown al pasar el ratón */
-/* .dropdown:hover .dropdown-content {
-  display: block;
-} */
- .dropdown-content {
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #013E7C;
-  min-width: 160px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
 .dropdown:hover .dropdown-content {
+  /* display: block; */
+  /*Con las dos líneas conseguimos que al pasar el ratón se haga visible y pueda interactuarse*/
   opacity: 1;
   visibility: visible;
 }
@@ -114,12 +113,33 @@ nav .search-container input {
   padding: 10px;
 }
 
+/* ========================
+TABLA CON COLORES
+======================== */
+table, th, td{
+  font-family: 'Courier New', Courier, monospace;
+	border: 1px solid grey;
+	border-collapse: collapse;
+	color: black;
+}
 
+td, th{
+	padding: 15px;
+}
 
+table h2{
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+}
 
-.large-content{
-   background-color: antiquewhite;
-   margin: 2em;
-   text-align: center;
-   padding-bottom: 2500px;
+#color-01{
+  background-color: #f00;
+}
+
+#color-02{
+  background-color: #0f0;
+}
+
+#color-03{
+  background-color: #00f;
 }
