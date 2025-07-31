@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1303-2-RuizMoreno-JoseLeopoldo</title>
+  <style>
+
+    h2{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 2em;
+    }
+
+    /* FLEX DIRECTION ROW */
+    .flex-container-row {
+    display: flex;
+    flex-direction: row;
+    background-color: lightgreen;
+    }
+
+    .flex-container-row > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    }
+
+    /* FLEX DIRECTION COLUMN */
+    .flex-container-column {
+      display: flex;
+      flex-direction: column;
+      background-color: lightgreen;
+    }
+
+    .flex-container-column > div {
+      background-color: #f1f1f1;
+      width: 100px;
+      margin: 10px;
+      text-align: center;
+      line-height: 75px;
+      font-size: 30px;
+    }
+
+    /* FLEX WRAP */
+
+    .flex-container-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightgreen;
+    }
+
+    .flex-container-wrap > div {
+      background-color: #f1f1f1;
+      width: 100px;
+      margin: 10px;
+      text-align: center;
+      line-height: 75px;
+      font-size: 30px;
+    }
+
+    /* FLEX SPACE-EVENLY */
+
+    .flex-container-space-evenly {
+      display: flex;
+      justify-content: space-evenly;
+      background-color: lightgreen;
+    }
+
+    .flex-container-space-evenly > div {
+      background-color: #f1f1f1;
+      width: 100px;
+      margin: 10px;
+      text-align: center;
+      line-height: 75px;
+      font-size: 30px;
+    }
+
+    /* FLEX GROW */
+    .flex-container-grow {
+      display: flex;
+      align-items: stretch;
+      background-color: #f1f1f1;
+    }
+
+    .flex-container-grow > div {
+      background-color: lightgreen;
+      margin: 10px;
+      text-align: center;
+      line-height: 75px;
+      font-size: 30px;
+    }
+
+    /* GRID ROW */
+
+    .grid-container-row {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 10px;
+      background-color: lightgreen;
+      padding: 10px;
+    }
+
+    .grid-container-row > div {
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 10px;
+      font-size: 30px;
+    }
+
+    .item2-row {
+      grid-row: 2 / span 2;
+    }
+
+    /* GRID AREA */
+
+    .grid-container-area {
+      display: grid;
+      grid-template-areas:
+        'header header header header header header'
+        'menu main main main main right'
+        'menu footer footer footer footer footer';
+      gap: 10px;
+      background-color: lightgreen;
+      padding: 10px;
+    }
+
+    .grid-container-area > div {
+      background-color: #f1f1f1;
+      color:#000;
+      padding: 10px;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .item1-area { grid-area: header;}
+    .item2-area { grid-area: menu; }
+    .item3-area { grid-area: main; }
+    .item4-area { grid-area: right; }
+    .item5-area { grid-area: footer; }
+
+    /* GRID JUSTIFY SELF */
+
+    .grid-container-justify {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 10px;
+      background-color: lightgreen;
+      padding: 10px;
+    }
+
+    .grid-container-justify > div {
+      background-color: #f1f1f1;
+      color:#000;
+      padding: 10px;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .item1-justify {
+      justify-self: right;
+    }
+
+    .item6-justify {
+      justify-self: center;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>1302-2 José Leopoldo Ruiz Moreno</h1>
+  <section>
+    <h2>Sección 0</h2>
+    <h3>La propiedad flex direction</h3>
+    <p><strong>flex-direction:row;</strong> distribuye los items horizontalmente de derecha a izquierda:</p>
+
+    <div class="flex-container-row">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>  
+    </div>
+  </section>
+
+  <section>
+    <h2>Sección 1</h2>
+    <h3>La propiedad flex direction</h3>
+    <p><strong>flex-direction:column;</strong> distribuye los items verticalmente de arriba a abajo:</p>
+
+    <div class="flex-container-column">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>  
+    </div>
+  </section>
+
+  <section>
+    <h2>Seccion 1 | Propiedad flex-wrap</h2>
+    <p><strong>flex-wrap: wrap;</strong> especifica que los items "wrapearan"si es necesario:<p>
+    <div class="flex-container-wrap">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>  
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>  
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>  
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>  
+    </div>
+  </section>
+
+  <section>
+    <h2>Sección 2 | Propiedad justify-content:space-evenly</h2>
+    <p><strong>justify-content:space-evenly;</strong> Distribuye los elementos con el mismo espacio alrededor de ellos:<p>
+    <div class="flex-container-space-evenly">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>  
+    </div>
+  </section>
+
+  <section>
+    <h2>Sección 3 | Propiedad flex-grow</h2>
+    <p><strong>flex-grow:();</strong> Indica qué tamaño tendrá cada elemento en relación a los demás:<p>
+    <div class="flex-container-grow">
+      <div style="flex-grow: 1">1</div>
+      <div style="flex-grow: 1">2</div>
+      <!-- El tercer elemento será cuatro veces más grande que los anteriores -->
+      <div style="flex-grow: 4">3</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Sección 4 | Propiedad grid-row</h2>
+    <p>La propiedad <strong><em>grid-row</em></strong> es un atajo para las propiedades <strong><em>grid-row-start</em></strong> y <strong><em>grid-row-end</em></strong>.</p>
+    <div class="grid-container-row">
+      <div>1</div>
+      <div class="item2-row">2</div>
+      <div>3</div>  
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>  
+    </div>
+  </section>
+
+  <section>
+    <h2>Sección 5 | Propiedad Grid Area</h2>
+    <p>Puedes usar la propiedad <strong><em>grid-area</em></strong> para nombrar elementos dentro de la grid.</p>
+    <div class="grid-container-area">
+      <div class="item1-area">Header</div>
+      <div class="item2-area">Menu</div>
+      <div class="item3-area">Main</div>  
+      <div class="item4-area">Right</div>
+      <div class="item5-area">Footer</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Sección 6 | Propiedad Justify Self</h2>
+    <p>La propiedad <strong><em>justify-self</em></strong> alinea el contenido de una grid en la misma fila.</p>
+    <div class="grid-container-justify">
+      <div class="item1-justify">Item 1</div>
+      <div class="item2-justify">Item 2</div>
+      <div class="item3-justify">Item 3</div>  
+      <div class="item4-justify">Item 4</div>
+      <div class="item5-justify">Item 5</div>
+      <div class="item6-justify">Item 6</div>
+    </div>
+  </section>
+
+</body>
+</html>

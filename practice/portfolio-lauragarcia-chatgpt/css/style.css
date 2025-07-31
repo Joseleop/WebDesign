@@ -1,0 +1,44 @@
+/* =======================================
+   1. VARIABLES Y CONFIGURACIÓN GLOBAL
+   ======================================= */
+/* Aquí defines :root con colores, tipografías, tamaños */
+
+/* =======================================
+   2. ESTILOS BASE
+   ======================================= */
+/* body, tipografía general, enlaces, imágenes responsivas */
+
+/* =======================================
+   3. LAYOUT GENERAL
+   ======================================= */
+/* Contenedor principal, ancho máximo, grid o flex global */
+
+/* =======================================
+   4. HEADER Y NAVEGACIÓN
+   ======================================= */
+/* Estilos para header, logo, nav, enlaces, menú responsive */
+
+/* =======================================
+   5. SECCIÓN: INICIO (HOME)
+   ======================================= */
+/* Hero, texto de bienvenida, botones */
+
+/* =======================================
+   6. SECCIÓN: PROYECTOS
+   ======================================= */
+/* Grid de tarjetas, títulos, hover effects */
+
+/* =======================================
+   7. SECCIÓN: CONTACTO
+   ======================================= */
+/* Formulario: inputs, labels, botón, validación visual */
+
+/* =======================================
+   8. FOOTER
+   ======================================= */
+/* Estilos para pie de página, redes sociales */
+
+/* =======================================
+   9. MEDIA QUERIES (RESPONSIVE)
+   ======================================= */
+/* Ajustes para móvil, tablet y desktop */

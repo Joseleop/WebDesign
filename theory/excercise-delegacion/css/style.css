@@ -1,0 +1,290 @@
+:root{
+   --primary: #0c71c3;
+   --secondary: #3D5A95;
+}
+
+*{
+   box-sizing: border-box;
+}
+
+h2{
+   font-family: 'PT Serif',Georgia,"Times New Roman",serif;
+   font-weight: 700;
+   font-size: 1.8em;
+   color: var(--primary);
+   text-align: left;
+}
+
+a{
+   text-decoration: none;
+}
+a:visited{
+   color: black;
+}
+
+main > h2{
+   max-width: 1100px;
+   margin: 0 auto 20px;
+}
+
+.content-box {
+   max-width: 1100px;
+   margin: 20px auto;
+   padding: 30px;
+   background-color: #fff;
+   box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.3);
+   border-top: 8px solid var(--primary);
+}
+
+/* ===========================
+HEADER
+===============================*/
+
+h1, header h2{
+   font-family: PT Sans Narrow, sans-serif;
+   font-size: 2em;
+   color: white;
+   text-align: center;
+}
+
+.logos{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 3rem;
+}
+.logos img{
+   margin-top: 5em;
+   height: 5rem;
+}
+
+header .logos{
+   max-width: 100%;
+}
+
+header .bg-img{
+   background-image: url("../img/farola.jpg");
+   height: 282px;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/* ============================
+NAV
+===========================*/
+
+nav{
+   font-family: PT Sans Narrow, sans-serif;
+   font-weight: 700;
+   font-size: 1.2em;
+   text-transform: uppercase;
+   max-width: 1100px;
+   margin: 0 auto;
+}
+nav ul{
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   justify-content: left;
+   gap: 2rem;
+}
+
+nav li{
+   position: relative;
+}
+
+nav li a{
+   text-decoration: none;
+   color: black;
+   transition: color 0.3s;
+}
+
+nav li a:hover, nav li a:active {
+   color: var(--secondary);
+}
+
+nav li a::after{
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: -1em;
+   height: 2px;
+   width: 0;
+   background-color: var(--secondary);
+   transition: width 0.3s ease;
+}
+
+nav a:hover::after, nav a:active::after {
+   width: 100%;
+}
+
+/* ====================================
+NEWS
+====================================*/
+
+.news{
+   max-width: 100%;
+   display: flex;
+   flex-direction: row;
+   text-transform: uppercase;
+   transform: scale3d(0.5,0.5,0.5,);
+   opacity: 0;
+   animation: news-movement 1.0s ease-in-out forwards;
+}
+@keyframes news-movement {
+   0% {
+   transform: scale(0);
+   opacity: 0;
+   }
+   100% {
+   transform: scale(1);
+   opacity: 1;
+   }
+}
+
+.news h3{  
+   font-size: 1em;
+   font-family: 'PT Serif', serif;
+   font-weight: 400;
+}
+
+.news p{
+   font-family: 'PT Serif', serif;
+   font-weight: 300;
+}
+
+.news small{
+   font-family: 'PT Serif', serif;
+   font-weight: 100;
+}
+
+.news ul{
+   list-style: none;
+
+}
+
+.news ul li{
+   display: flex;
+   flex-direction: row;
+   justify-content: left;
+   gap: 2rem;
+   margin-bottom: 10px;
+}
+
+.news ul img{
+   width: 130px;
+   height: 80px;
+}
+
+/* =============================
+PROYECTS
+================================*/
+.proyects{
+   max-width: 100%;
+   display: flex;
+   flex-direction: row;
+}
+
+.proyects ul{
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+   gap: 2.1em; 
+   padding: 0;
+   margin: 0;
+}
+
+.proyects ul li{
+   flex: 0 0 auto; /* mantiene el tamaño de la imagen */
+}
+
+.proyects ul img{
+   width: 130px;
+   height: 80px;
+   object-fit: cover;
+   display: block;
+}
+
+.content-box .bg-img{
+   background-image: url("../img/puzzle.png");
+   background-color: #9ABEFC;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   padding-top: 103px;
+   padding-bottom: 103px;
+   padding-left: 100px;
+}
+
+.content-box .content-text{
+   display: flex;
+   flex-direction: column;
+   justify-content: left;
+}
+
+.content-text h1{
+   color: white;
+   font-family: 'PT Serif', serif;
+   text-align: left;
+   font-size: 2em;
+   font-weight: 600;
+}
+
+.content-text p{
+   color: white;
+   font-family: 'PT Serif', serif;
+   text-align: left;
+   font-size: 1em;
+   font-weight: 400;
+
+}
+
+/* =============================
+CONTACT
+================================*/
+.contact{
+   max-width: 100%;
+   display: flex;
+   flex-direction: row;
+   gap: 2rem;
+}
+
+#contact-text{
+   font-family: 'PT Serif',Georgia,"Times New Roman",serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 1em;
+   line-height: 1.5;
+   color: var(--primary);
+}
+
+#contact-form{
+   
+}
+
+
+
+/* =======================
+MEDIA QUERY
+==========================*/
+
+@media (max-width: 768px) {
+  .news {
+    flex-direction: column;
+    text-align: center;
+    align-items: center; /* centra los elementos al hacer columna */
+  }
+  .proyects {
+    flex-direction: column;
+    text-align: center;
+    align-items: center; /* centra los elementos al hacer columna */
+  }
+  .contact {
+    flex-direction: column;
+    text-align: center;
+    align-items: center; /* centra los elementos al hacer columna */
+  }
+
+  
+}
