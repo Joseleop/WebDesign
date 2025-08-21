@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Piedra, Papel o Tijeras</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .opciones {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .opciones img {
+      width: 120px;
+      height: 120px;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: transform 0.2s;
+    }
+
+    .opciones img:hover {
+      transform: scale(1.1);
+    }
+
+    .resultado {
+      font-size: 1.4rem;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .elecciones {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin-top: 20px;
+    }
+
+    .elecciones div {
+      text-align: center;
+    }
+
+    .elecciones img {
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h1>✊ Piedra ✋ Papel ✌️ Tijeras</h1>
+
+  <div class="opciones">
+    <img src="piedra.png" alt="Piedra" onclick="jugar('piedra')">
+    <img src="papel.png" alt="Papel" onclick="jugar('papel')">
+    <img src="tijeras.png" alt="Tijeras" onclick="jugar('tijeras')">
+  </div>
+
+  <div class="elecciones">
+    <div>
+      <p>👤 Tú</p>
+      <img id="jugadorImg" src="" alt="">
+    </div>
+    <div>
+      <p>💻 Máquina</p>
+      <img id="maquinaImg" src="" alt="">
+    </div>
+  </div>
+
+  <p class="resultado" id="resultado">Haz tu elección...</p>
+
+  <script>
+    const opciones = ["piedra", "papel", "tijeras"];
+
+    function jugar(eleccionJugador) {
+      // Elección aleatoria de la máquina
+      const eleccionMaquina = opciones[Math.floor(Math.random() * opciones.length)];
+
+      // Mostrar imágenes de elecciones
+      document.getElementById("jugadorImg").src = eleccionJugador + ".png";
+      document.getElementById("maquinaImg").src = eleccionMaquina + ".png";
+
+      // Determinar resultado
+      let resultado = "";
+      if (eleccionJugador === eleccionMaquina) {
+        resultado = "🤝 Empate";
+      } else if (
+        (eleccionJugador === "piedra" && eleccionMaquina === "tijeras") ||
+        (eleccionJugador === "papel" && eleccionMaquina === "piedra") ||
+        (eleccionJugador === "tijeras" && eleccionMaquina === "papel")
+      ) {
+        resultado = "🎉 ¡Ganaste!";
+      } else {
+        resultado = "💔 Perdiste";
+      }
+
+      document.getElementById("resultado").textContent = resultado;
+    }
+  </script>
+</body>
+</html>

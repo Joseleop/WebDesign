@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+
+  <link rel="stylesheet" href="styles/reset.css">
+  <style>
+    section{
+      padding: 1.5rem 0;
+    }
+    .b-example-divider {
+        /* width: 100%; */
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        height: 4rem;
+        background-color: #0000001a;
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em #0000001a,
+        inset 0 0.125em 0.5em #00000026;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <!-- <ul>
+        <li>Inicio</li>
+        <li>Ejemplos</li>
+      </ul> -->
+    </nav>
+  </header>
+  <main style="padding: 3rem;">
+    <section>
+      <img id="myColor" src="img/red.png" style="width:100px">
+      <button onclick="document.getElementById('myColor').src='img/red.png'">Rojo</button>
+      <button onclick="document.getElementById('myColor').src='img/yellow.png'">Amarillo </button>
+      <button onclick="document.getElementById('myColor').src='img/green.png'">Verde</button>
+      <button onclick="document.getElementById('myColor').src='img/blue.png'">Azul</button>
+    </section>
+    
+    <div class="b-example-divider"></div>
+
+    <section>
+      <p id="sizeChange">Cambiamos el fontSize mediante JS</p>
+      <button type="button" onclick="document.getElementById('sizeChange').style.fontSize='35px'">Fuente grande!</button>
+      <button type="button" onclick="document.getElementById('sizeChange').style.fontSize='16px'">Fuente pequeña!</button>
+    </section>
+
+    <div class="b-example-divider"></div>
+
+    <section>
+      <p id="hideElement">Podemos ocultar o mostrar elementos con JS</p>
+      <button type="button" onclick="document.getElementById('hideElement').style.display='none'">Ocultamos contenido!</button>
+      <button type="button" onclick="document.getElementById('hideElement').style.display='block'">Mostramos contenido!</button>
+    </section>
+
+    <div class="b-example-divider"></div>
+
+    <section>
+      <p id="externalScript">Podemos modificar elementos desde un link externo</p>
+
+      <button type="button" onclick="myFunction()">Cambia el párrafo</button>
+      <button type="button" onclick="myFunction02()">Vuelve atrás</button>
+
+      <script src="scripts/myScript.js"></script>
+    </section>
+
+    <div class="b-example-divider"></div>
+
+    <section>
+      <p>Puedes crear alertas flotantes!!!</p>
+      <button type="button" onclick="myFunction03()">¡¡ALARMA!!</button>
+
+
+    </section>
+
+  </main>
+</body>
+</html>

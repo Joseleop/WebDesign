@@ -1,0 +1,43 @@
+/* =======================================
+   RESET BÁSICO OPTIMIZADO
+   ======================================= */
+
+/* 1. Box-sizing: hace que padding y border se incluyan en el width */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Elimina márgenes y paddings globales */
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Listas sin viñetas */
+ul, ol {
+  list-style: none;
+}
+
+/* 4. Enlaces sin estilos */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 5. Imágenes responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 6. Tipografía base consistente */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased; /* Mejor legibilidad en WebKit */
+}
+
+/* 7. Inputs y botones heredan fuente */
+input, button, textarea, select {
+  font: inherit;
+}

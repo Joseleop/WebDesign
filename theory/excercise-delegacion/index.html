@@ -1,143 +1,190 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-   <!-- FUENTES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Unbounded:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Unbounded:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
 
-   <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-   <title>EjercicioDelegación</title>
-</head>
-<body>
-   <header>
+    <title>
+      Delegación Municipal de Formación y Empleo | Ayuntamiento de Carmona
+    </title>
+  </head>
+  <body>
+    <header>
       <div class="bg-img">
-         <div class="logos">
-            <img src="img/Escudo_de_Carmona.png" alt="escudo de delegacion">
-            <img src="img/Escudo_de_Carmona.png" alt="escudo de carmona">
-         </div>
-         <h1>Delegación Municipal de Formación y Empleo</h1>
-         <h2>Ayuntamiento de Carmona</h2>
+        <div class="logos">
+          <img src="img/Escudo_de_Carmona.png" alt="escudo de delegacion" />
+          <img src="img/Escudo_de_Carmona.png" alt="escudo de carmona" />
+        </div>
+        <h1>Delegación Municipal de Formación y Empleo</h1>
+        <h2>Ayuntamiento de Carmona</h2>
       </div>
-   </header>
-   <nav class="main-menu">
+    </header>
+    <nav class="main-menu">
       <ul>
-         <li><a href="index.html">Inicio</a></li>
-         <li><a href="#">Noticias</a></li>
-         <li><a href="#">Formación</a></li>
-         <li><a href="#">Empleo</a></li>
-         <li><a href="#">Eventos</a></li>
-         <li><a href="proyects.html">Proyectos</a></li>
-         <li><a href="#">Solicitudes</a></li>
-         <li><a href="#">Contacto</a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="#">Formación</a></li>
+        <li class="dropdown">
+          <a href="#">Servicios</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+        <li><a href="#">Empleo</a></li>
+        <li><a href="#">Eventos</a></li>
+        <li><a href="proyects.html">Proyectos</a></li>
+        <li><a href="#">Solicitudes</a></li>
+        <li><a href="index.html#01contact">Contacto</a></li>
       </ul>
-   </nav>
+    </nav>
 
-   <main>
+    <main>
       <h2>Noticias</h2>
       <div class="content-box">
-         <section class="news">
-            <article>
-               <img src="img/new01.jpg" alt="noticia">
-               <p><a href="#">Listado de selección</a></p>
-               <small>2 Junio 2025</small>
-            </article>
-            <article>
-               <ul>
-                  <li class="last-news">
-                     <img src="img/new01.jpg" alt="noticia">
-                     <div class="last-news-content">
-                        <h3><a href="#">Listado de calificaciones...</a></h3>
-                        <small>20 Mayo 2025</small>
-                     </div>
-                  </li>
-                  <li class="last-news">
-                     <img src="img/new01.jpg" alt="noticia">
-                     <div class="last-news-content">
-                        <h3><a href="#">Acta de admisión...</a></h3>
-                        <small>14 Mayo 2025</small>
-                     </div>
-                  </li>
-                  <li class="last-news">
-                     <img src="img/new01.jpg" alt="noticia">
-                     <div class="last-news-content">
-                        <h3><a href="#">Acta de admisión provisional...</a></h3>
-                        <small>24 Abril 2025</small>
-                     </div>
-                  </li>
-                  <li class="last-news">
-                     <img src="img/new01.jpg" alt="noticia">
-                     <div class="last-news-content">
-                        <h3><a href="#">Listado de calificaciones...</a></h3>
-                        <small>24 Abril 2025</small>
-                     </div>
-                  </li>
-                  <li class="last-news">
-                     <img src="img/new01.jpg" alt="noticia">
-                     <div class="last-news-content">
-                        <h3><a href="#">Listado de selección...</a></h3>
-                        <small>23 Abril 2025</small>
-                     </div>
-                  </li>
-               </ul>
-            </article>
-         </section> 
+        <section class="news">
+          <article>
+            <img src="img/new01.jpg" alt="noticia" />
+            <p><a href="#">Listado de selección</a></p>
+            <small>2 Junio 2025</small>
+          </article>
+          <article>
+            <ul>
+              <li class="last-news">
+                <img src="img/new01.jpg" alt="noticia" />
+                <div class="last-news-content">
+                  <h3><a href="#">Listado de calificaciones...</a></h3>
+                  <small>20 Mayo 2025</small>
+                </div>
+              </li>
+              <li class="last-news">
+                <img src="img/new01.jpg" alt="noticia" />
+                <div class="last-news-content">
+                  <h3><a href="#">Acta de admisión...</a></h3>
+                  <small>14 Mayo 2025</small>
+                </div>
+              </li>
+              <li class="last-news">
+                <img src="img/new01.jpg" alt="noticia" />
+                <div class="last-news-content">
+                  <h3><a href="#">Acta de admisión provisional...</a></h3>
+                  <small>24 Abril 2025</small>
+                </div>
+              </li>
+              <li class="last-news">
+                <img src="img/new01.jpg" alt="noticia" />
+                <div class="last-news-content">
+                  <h3><a href="#">Listado de calificaciones...</a></h3>
+                  <small>24 Abril 2025</small>
+                </div>
+              </li>
+              <li class="last-news">
+                <img src="img/new01.jpg" alt="noticia" />
+                <div class="last-news-content">
+                  <h3><a href="#">Listado de selección...</a></h3>
+                  <small>23 Abril 2025</small>
+                </div>
+              </li>
+            </ul>
+          </article>
+        </section>
       </div>
       <h2>Proyectos</h2>
       <div class="content-box">
-         <section class="proyects">
-            <ul class="proyect-list">
-               <li class="proyect-list-element">
-                  <a href="#"><img src="img/new01.jpg" alt="noticia"></a>
-               </li>
-               <li class="proyect-list-element">
-                  <a href="#"><img src="img/new01.jpg" alt="noticia"></a>
-               </li>
-               <li class="proyect-list-element">
-                  <a href="#"><img src="img/new01.jpg" alt="noticia"></a>
-               </li>
-               <li class="proyect-list-element">
-                  <a href="#"><img src="img/new01.jpg" alt="noticia"></a>
-               </li>
-               <li class="proyect-list-element">
-                  <a href="#"><img src="img/new01.jpg" alt="noticia"></a>
-               </li>
-               <!-- <li class="proyect-list-element">
+        <section class="proyects">
+          <ul class="proyect-list">
+            <li class="proyect-list-element">
+              <a href="#"><img src="img/new01.jpg" alt="noticia" /></a>
+            </li>
+            <li class="proyect-list-element">
+              <a href="#"><img src="img/new01.jpg" alt="noticia" /></a>
+            </li>
+            <li class="proyect-list-element">
+              <a href="#"><img src="img/new01.jpg" alt="noticia" /></a>
+            </li>
+            <li class="proyect-list-element">
+              <a href="#"><img src="img/new01.jpg" alt="noticia" /></a>
+            </li>
+            <li class="proyect-list-element">
+              <a href="#"><img src="img/new01.jpg" alt="noticia" /></a>
+            </li>
+            <!-- <li class="proyect-list-element">
                   <a href="#"><img src="img/new01.jpg" alt="noticia"></a>
                </li>
                <li class="proyect-list-element">
                   <a href="#"><img src="img/new01.jpg" alt="noticia"></a>
                </li> -->
-            </ul>
-         </section> 
+          </ul>
+        </section>
       </div>
       <h2>Contacto</h2>
       <div class="content-box">
-         <section class="contact">
-            <article>
-               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25330.723145615317!2d-5.645119!3d37.476293!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd128c9de6256907%3A0xda0c20754fb3a8a!2sO.A.L.%20Centro%20Municipal%20de%20Formaci%C3%B3n%20Integral!5e0!3m2!1ses!2sus!4v1752576767987!5m2!1ses!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </article>
-            <article>
-               <p id="contact-text">Si necesita ponerse en contacto con nosotros no dude en rellenar el siguiente formulario y le responderemos a la mayor brevedad posible.
-               </p>
-               <div id="contact-form">
-                  <form action="">
-                     <input type="text" id="fname" name="fname" placeholder="Nombre*">
-                     <input type="text" id="lname" name="lname" placeholder="Apellido*">
-                     <input type="text" id="email" name="email" placeholder="Correo*">
-                     <textarea name="textm" id="textm" rows="10" placeholder="Mensaje"></textarea>
-                     <input type="submit" value="Submit">
-                  </form>
-               </div>
-            </article>
-         </section> 
+        <section class="contact" id="01contact">
+          <article>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25330.723145615317!2d-5.645119!3d37.476293!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd128c9de6256907%3A0xda0c20754fb3a8a!2sO.A.L.%20Centro%20Municipal%20de%20Formaci%C3%B3n%20Integral!5e0!3m2!1ses!2sus!4v1752576767987!5m2!1ses!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </article>
+          <article>
+            <p id="contact-text">
+              Si necesita ponerse en contacto con nosotros no dude en rellenar
+              el siguiente formulario y le responderemos a la mayor brevedad
+              posible.
+            </p>
+            <div id="contact-form">
+              <form action="">
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  placeholder="Nombre*"
+                />
+                <input
+                  type="text"
+                  id="lname"
+                  name="lname"
+                  placeholder="Apellido*"
+                />
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Correo*"
+                />
+                <textarea
+                  name="textm"
+                  id="textm"
+                  rows="10"
+                  placeholder="Mensaje"
+                ></textarea>
+                <input type="submit" value="Submit" />
+              </form>
+            </div>
+          </article>
+        </section>
       </div>
-      
-   </main>
-</body>
+    </main>
+  </body>
 </html>

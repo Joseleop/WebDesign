@@ -118,6 +118,37 @@ nav a:hover::after, nav a:active::after {
    width: 100%;
 }
 
+/* Dropdown */
+.dropdown-content {
+  /* display: none; */
+  /*Con esta línea, la siguiente y la última conseguimos que se haga una transición y no aparezca abruptamente*/
+  opacity: 0;  
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown-content a {
+  padding: 1em 0.7em;
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+/* Mostrar el dropdown al pasar el ratón */
+.dropdown:hover .dropdown-content {
+  /* display: block; */
+  /*Con las dos líneas conseguimos que al pasar el ratón se haga visible y pueda interactuarse*/
+  opacity: 1;
+  visibility: visible;
+}
+
 /* ====================================
 NEWS
 ====================================*/

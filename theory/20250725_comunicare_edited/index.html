@@ -28,16 +28,27 @@
           font-size: 3.5rem;
         }
       }
-      .b-example-divider {
+      /* .b-example-divider { */
         /* width: 100%; */
-        width: 100vw;
+        /* width: 100vw;
         margin-left: calc(-50vw + 50%);
         height: 4rem;
         background-color: #0000001a;
         border: solid rgba(0, 0, 0, 0.15);
         border-width: 1px 0;
         box-shadow: inset 0 0.5em 1.5em #0000001a,
-          inset 0 0.125em 0.5em #00000026;
+        inset 0 0.125em 0.5em #00000026; */
+      /* } */
+      .b-example-divider {
+        /* width: 100%; */
+        width: 100vw;
+        /* margin-left: calc(-50vw + 50%); */
+        height: 4rem;
+        /* background-color: #0000001a; */
+        /* border: solid rgba(0, 0, 0, 0.15); */
+        /* border-width: 1px 0; */
+        /* box-shadow: inset 0 0.5em 1.5em #0000001a, */
+        /* inset 0 0.125em 0.5em #00000026; */
       }
       .first-divider{
         margin-bottom: 2rem;
@@ -91,19 +102,14 @@
       }
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
+      }    
+      .casosexito{
+        height: 15rem;
       }
-      body {
-        padding-bottom: 20px;
+      input, textarea{
+        border: 1px solid lightgrey;
+        margin-bottom: 10px; 
       }
-      .navbar {
-        margin-bottom: 20px;
-      }
-      footer{
-        margin-top: 2em;
-      }
-      
-
-
     </style>
   </head>
   <body>
@@ -172,7 +178,7 @@
           <button
             type="button"
             class="dropdown-item d-flex align-items-center"
-            data-bs-theme-value="dark"
+            data-bs-theme-value="light"
             aria-pressed="false"
           >
             <svg class="bi me-2 opacity-50" aria-hidden="true">
@@ -202,66 +208,43 @@
         </li>
       </ul>
     </div>
-    <header data-bs-theme="dark">
-      <nav
-          class="navbar navbar-expand-lg bg-body-tertiary rounded"
-          aria-label="Thirteenth navbar example"
-        >
-          <div class="container-fluid">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarsExample11"
-              aria-controls="navbarsExample11"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="collapse navbar-collapse d-lg-flex"
-              id="navbarsExample11"
-            >
-              <a class="navbar-brand col-lg-3 me-0" href="#"><img src="img/logo_comunicare_70.png" alt="logo"></a>
-              <ul class="navbar-nav col-lg-6 justify-content-lg-center">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    >Dropdown</a
-                  >
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-                <button class="btn btn-primary">Button</button>
-              </div>
-            </div>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
+        <div class="container-fluid">
+
+          <!-- Logo -->
+          <a class="navbar-brand ms-5" href="https://www.comunicare.es/" target="_blank">
+            <img src="img/logo_comunicare_70.png" alt="Comunicare" height="70">
+          </a>
+
+          <!-- Botón toggle móvil -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menú -->
+          <div class="collapse navbar-collapse justify-content-end me-5" id="navbarCollapse">
+            <ul class="navbar-nav mb-2 mb-md-0 align-items-center">
+              <li class="nav-item me-4">
+                <a class="nav-link text-dark" href="#">Servicios</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="btn" style="background-color:#792f68; color:white;">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">644698697</a>
+              </li>
+            </ul>
           </div>
-        </nav>
+
+        </div>
+      </nav>
     </header>
+
+    <div class="b-example-divider"></div>
+
     <main>
-      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" style="margin-bottom: 3rem;">
         <div class="carousel-indicators">
           <button
             type="button"
@@ -284,89 +267,40 @@
             aria-label="Slide 3"
           ></button>
         </div>
+
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <svg
-              aria-hidden="true"
-              class="bd-placeholder-img"
-              height="100%"
-              preserveAspectRatio="xMidYMid slice"
-              width="100%"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              ></rect>
-            </svg>
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Example headline.</h1>
-                <p class="opacity-75">
-                  Some representative placeholder content for the first slide of
-                  the carousel.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg
-              aria-hidden="true"
-              class="bd-placeholder-img"
-              height="100%"
-              preserveAspectRatio="xMidYMid slice"
-              width="100%"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              ></rect>
-            </svg>
-            <div class="container">
+            <img src="img/slider_comunicare_01.jpg" class="d-block w-100 h-100 object-fit-cover" alt="comunicare1" width="100%">
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-25"></div>
               <div class="carousel-caption">
-                <h1>Another example headline.</h1>
+                <h3 class="d-flex justify-content-center mb-5 display-3" style="font-weight: 350;text-shadow: 1px 1px 3px rgba(0,0,0,0.6);">Agencia de Marketing Online</h3>
+                <p>360º Marketing</p>
                 <p>
-                  Some representative placeholder content for the second slide
-                  of the carousel.
+                  <a style="background-color: #792f68; color: white;" class="btn btn-lg mb-5 rounded-pill" href="#">Envíanos tu reto</a>
                 </p>
-                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
               </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/slider_comunicare_02.jpg" class="d-block w-100 h-100 object-fit-cover" alt="comunicare2" width="100%">
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-25"></div>
+            <div class="carousel-caption"   >
+              <h3 class="d-flex justify-content-center mb-5 display-3" style="font-weight: 350;text-shadow: 1px 1px 3px rgba(0,0,0,0.6);">Análisis y estrategia</h3>
+              <p>
+                <a style="background-color: #792f68; color: white;" class="btn btn-lg mb-5 rounded-pill" href="#">Envíanos tu reto</a>
+              </p>
             </div>
           </div>
           <div class="carousel-item">
-            <svg
-              aria-hidden="true"
-              class="bd-placeholder-img"
-              height="100%"
-              preserveAspectRatio="xMidYMid slice"
-              width="100%"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              ></rect>
-            </svg>
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
-                <p>
-                  Some representative placeholder content for the third slide of
-                  this carousel.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
-                </p>
-              </div>
+            <img src="img/slider_comunicare_03.jpg" class="d-block w-100 h-100 object-fit-cover" alt="comunicare3" width="100%">
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-25"></div>
+            <div class="carousel-caption"   >
+              <h3 class="d-flex justify-content-center mb-5 display-3" style="font-weight: 350;text-shadow: 1px 1px 3px rgba(0,0,0,0.6);">Captación Multicanal</h3>
+              <p>
+                <a style="background-color: #792f68; color: white;" class="btn btn-lg mb-5 rounded-pill" href="#">Envíanos tu reto</a>
+              </p>
             </div>
           </div>
+          
         </div>
         <button
           class="carousel-control-prev"
@@ -388,718 +322,349 @@
         </button>
       </div>
 
-      <div class="col-lg-6 col-xxl-4 my-5 mx-auto">
-        <div class="d-grid gap-2">
-          <button class="btn btn-primary" type="button">Primary action</button>
+      <!--CALL TO ACTION-->
+      <div class="d-flex justify-content-center">
+        <div class="alert alert-info" role="alert" style="width: 75%; background-color: #792f68; color:#fff; text-align: center; font-weight: bold;">
+          <p class="fs-5">¡Consigue tu Kit Digital de hasta 12.000€!<br>
+          Contrata tu pack servicios ahora y benefíciate de las ayudas del programa Kit Digital.</p>
         </div>
       </div>
-      <!-- Marketing messaging and featurettes
-  ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
-      <div class="container marketing">
-        <!-- Three columns of text below the carousel -->
+      
+
+      <!-- <div class="container"> -->
                 
         <!-- START THE FEATURETTES -->
-        <hr class="featurette-divider" />
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">
-              First featurette heading.
-              <span class="text-body-secondary">It’ll blow your mind.</span>
-            </h2>
-            <p class="lead">
-              Some great placeholder content for the first featurette here.
-              Imagine some exciting prose here.
-            </p>
-            <button>btn</button>
-          </div>
-          <div class="col-md-5">
-            <svg
-              aria-label="Placeholder: 500x500"
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              height="500"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              width="500"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-bg)"
-              ></rect>
-              <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
-                500x500
-              </text>
-            </svg>
-          </div>
-        </div>
-        <hr class="featurette-divider" />
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading fw-normal lh-1">
-              Oh yeah, it’s that good.
-              <span class="text-body-secondary">See for yourself.</span>
-            </h2>
-            <p class="lead">
-              Another featurette? Of course. More placeholder content here to
-              give you an idea of how this layout would work with some actual
-              real-world content in place.
-            </p>
-            <button>btn</button>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <svg
-              aria-label="Placeholder: 500x500"
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              height="500"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              width="500"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-bg)"
-              ></rect>
-              <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
-                500x500
-              </text>
-            </svg>
-          </div>
-        </div>
-        <hr class="featurette-divider" />
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">
-              And lastly, this one.
-              <span class="text-body-secondary">Checkmate.</span>
-            </h2>
-            <p class="lead">
-              And yes, this is the last block of representative placeholder
-              content. Again, not really intended to be actually read, simply
-              here to give you a better view of what this would look like with
-              some actual content. Your content.
-            </p>
-            <button>btn</button>
-          </div>
-          <div class="col-md-5">
-            <svg
-              aria-label="Placeholder: 500x500"
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              height="500"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              width="500"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-bg)"
-              ></rect>
-              <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
-                500x500
-              </text>
-            </svg>
-          </div>
-        </div>
-        <hr class="featurette-divider" />
-        <!-- /END THE FEATURETTES -->
-
-        <div class="col-lg-6 col-xxl-4 my-5 mx-auto">
-          <div class="d-grid gap-2">
-            <button class="btn btn-primary" type="button">Ver más</button>
-          </div>
-        </div>
-
-        <div class="row featurette bg-info">
-            
-            <div class="col-md-5">
-              <svg
-                aria-label="Placeholder: 500x500"
-                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                height="500"
-                preserveAspectRatio="xMidYMid slice"
-                role="img"
-                width="500"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Placeholder</title>
-                <rect
-                  width="100%"
-                  height="100%"
-                  fill="var(--bs-secondary-bg)"
-                ></rect>
-                <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
-                  500x500
-                </text>
-              </svg>
-            </div>
-            <div class="col-md-7">
-              <h2 class="featurette-heading fw-normal lh-1">
-                And lastly, this one.
-                <span class="text-body-secondary">Checkmate.</span>
-              </h2>
-              <p class="lead">
-                And yes, this is the last block of representative placeholder
-                content. Again, not really intended to be actually read, simply
-                here to give you a better view of what this would look like with
-                some actual content. Your content.
+      <div class="container">
+        <div class="row featurette col-md-12">
+          <div class="col-md-6" style=" align-items: left;">
+            <div class="col-md-9" style="text-align: left;float: right;"><br><br>
+              <div class="container">
+              <h3 style="margin-top: 1em;">Persuasión digital</h3>
+              <p class="lead" style="text-align: left;">
+                Agencia de marketing digital experta en optimizar todos tus canales en una estrategia común para lograr conversiones con el 
+                menor número de impactos y clicks. Captamos LEADs mediante SEO, SEM, Redes sociales 
+                (Facebook, Twitter, Instagram, Linkedin),
+                Email Marketing, mejora usabilidad y conversión.
               </p>
-              <button>Comenzar ya</button>
+              </div>
             </div>
           </div>
-        <div class="row featurette bg-info">
-            <div class="col-md-7">
-              <h2 class="featurette-heading fw-normal lh-1">
-                And lastly, this one.
-                <span class="text-body-secondary">Checkmate.</span>
-              </h2>
-              <p class="lead">
-                And yes, this is the last block of representative placeholder
-                content. Again, not really intended to be actually read, simply
-                here to give you a better view of what this would look like with
-                some actual content. Your content.
-              </p>
-              <button>Comenzar ya</button>
-            </div>
-            <div class="col-md-5">
-              <svg
-                aria-label="Placeholder: 500x500"
-                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                height="500"
-                preserveAspectRatio="xMidYMid slice"
-                role="img"
-                width="500"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Placeholder</title>
-                <rect
-                  width="100%"
-                  height="100%"
-                  fill="var(--bs-secondary-bg)"
-                ></rect>
-                <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
-                  500x500
-                </text>
-              </svg>
-            </div>
+          <div class="col-md-3 flex-fill" style="margin-top: 5em">
+            <img src="img/Persuasion-Digital-ok.png" alt="persuasion" height="257px" width="491px">
           </div>
+        </div>
 
-          <h2>Facebook, Twitter & Linkedin Social Ads</h2>
-          <p>
-            Producción, edición y difusión de vídeos para Facebook, Twitter, linkedin…<br>
-            A/B Testing con vídeos/gifs para campañas de pago. ¡Prueba tus argumentos comerciales!<br>
-            Agencia de marketing digital 360.<br>
-            Comienza ya con la publicidad en redes sociales de la mano de una agencia experta en Marketing digital
-          </p>
-          <h2>Instagram Social Ads – Publicidad en Instagram</h2>
-          <p>Creamos historias que llaman la atención y probamos su potencial de conversión con Stories & Post de pago en campañas nativas. Somos una agencia de marketing digital especialista en gestión de campañas de publicidad en redes sociales. </p>
-
-          <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#myCarousel"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#myCarousel"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#myCarousel"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <svg
-                  aria-hidden="true"
-                  class="bd-placeholder-img"
-                  height="100%"
-                  preserveAspectRatio="xMidYMid slice"
-                  width="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    width="100%"
-                    height="100%"
-                    fill="var(--bs-secondary-color)"
-                  ></rect>
-                </svg>
-                <div class="container">
-                  <div class="carousel-caption text-start">
-                    <h1>Example headline.</h1>
-                    <p class="opacity-75">
-                      Some representative placeholder content for the first slide of
-                      the carousel.
-                    </p>
-                    <p>
-                      <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <svg
-                  aria-hidden="true"
-                  class="bd-placeholder-img"
-                  height="100%"
-                  preserveAspectRatio="xMidYMid slice"
-                  width="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    width="100%"
-                    height="100%"
-                    fill="var(--bs-secondary-color)"
-                  ></rect>
-                </svg>
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h1>Another example headline.</h1>
-                    <p>
-                      Some representative placeholder content for the second slide
-                      of the carousel.
-                    </p>
-                    <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <svg
-                  aria-hidden="true"
-                  class="bd-placeholder-img"
-                  height="100%"
-                  preserveAspectRatio="xMidYMid slice"
-                  width="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    width="100%"
-                    height="100%"
-                    fill="var(--bs-secondary-color)"
-                  ></rect>
-                </svg>
-                <div class="container">
-                  <div class="carousel-caption text-end">
-                    <h1>One more for good measure.</h1>
-                    <p>
-                      Some representative placeholder content for the third slide of
-                      this carousel.
-                    </p>
-                    <p>
-                      <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#myCarousel"
-              data-bs-slide="prev"
-            >
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#myCarousel"
-              data-bs-slide="next"
-            >
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-          
-          <div class="album py-5 bg-body-tertiary">
-        <div class="container">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  aria-label="Placeholder: Thumbnail"
-                  class="bd-placeholder-img card-img-top"
-                  height="225"
-                  preserveAspectRatio="xMidYMid slice"
-                  role="img"
-                  width="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <small class="text-body-secondary">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  aria-label="Placeholder: Thumbnail"
-                  class="bd-placeholder-img card-img-top"
-                  height="225"
-                  preserveAspectRatio="xMidYMid slice"
-                  role="img"
-                  width="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <small class="text-body-secondary">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  aria-label="Placeholder: Thumbnail"
-                  class="bd-placeholder-img card-img-top"
-                  height="225"
-                  preserveAspectRatio="xMidYMid slice"
-                  role="img"
-                  width="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <small class="text-body-secondary">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  aria-label="Placeholder: Thumbnail"
-                  class="bd-placeholder-img card-img-top"
-                  height="225"
-                  preserveAspectRatio="xMidYMid slice"
-                  role="img"
-                  width="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <small class="text-body-secondary">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  aria-label="Placeholder: Thumbnail"
-                  class="bd-placeholder-img card-img-top"
-                  height="225"
-                  preserveAspectRatio="xMidYMid slice"
-                  role="img"
-                  width="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <small class="text-body-secondary">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg
-                  aria-label="Placeholder: Thumbnail"
-                  class="bd-placeholder-img card-img-top"
-                  height="225"
-                  preserveAspectRatio="xMidYMid slice"
-                  role="img"
-                  width="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
-                    </div>
-                    <small class="text-body-secondary">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-
-      </div>
-      
-      
-        <!-- <hr class="featurette-divider" /> -->
-
-        
-
-        <!-- <hr class="featurette-divider" /> -->
-        
-        
-        
-        <!-- <hr class="featurette-divider" /> -->
-
-        
         <div class="b-example-divider"></div>
 
-        
-        <div class="container px-4 py-5">
-          <h2 class="pb-2 border-bottom" style="margin-bottom: 1.8em">
-            Contact
-          </h2>
-          <div class="row featurette">
-            <div class="col-md-6 order-md-2">
-              <form>
-                <div class="row mb-3">
-                  <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputEmail3">
-                  </div>
+        <div class="row featurette col-md-12">
+          <div class="col-md-6 order-md-2" style="align-items: center;text-align: left;">
+            <div class="container"><br>
+              <h3 style="margin-top: 1em;">Convencer no es fácil</h3>
+                <div class="d-flex justify-content-center align-items-center">
+                  <p class="lead" style="text-align: left;">Debemos encargarnos de difundir algo más que nuestros propios argumentos comerciales. Empieza un marketing más inteligente con una estrategia de marketing más elaborada. Combinar contenidos orgánicos con Facebook Ads aumenta el recuerdo de marca. </p>
                 </div>
-                <div class="row mb-3">
-                  <label for="inputPassword3" class="col-sm-2 col-form-label">Email</label>
-                  <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputPassword3">
-                  </div>
-                </div>
-                <fieldset class="row mb-3">
-                  <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-                  <div class="col-sm-10">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                      <label class="form-check-label" for="gridRadios1">
-                        First radio
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                      <label class="form-check-label" for="gridRadios2">
-                        Second radio
-                      </label>
-                    </div>
-                    <div class="form-check disabled">
-                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-                      <label class="form-check-label" for="gridRadios3">
-                        Third disabled radio
-                      </label>
-                    </div>
-                  </div>
-                </fieldset>
-                <div class="row mb-3">
-                  <div class="col-sm-10 offset-sm-2">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="gridCheck1">
-                      <label class="form-check-label" for="gridCheck1">
-                        Example checkbox
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <button type="submit" class="btn btn-primary">Send</button>
-              </form>
-            </div>
-            <div class="col-md-6 order-md-1">
-              
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25330.723145615317!2d-5.645119!3d37.476293!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd128c9de6256907%3A0xda0c20754fb3a8a!2sO.A.L.%20Centro%20Municipal%20de%20Formaci%C3%B3n%20Integral!5e0!3m2!1ses!2sus!4v1752576767987!5m2!1ses!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              
+                <a class="btn btn-lg mb-5 rounded-pill" style="float: left;background-color: #000;color: #fff;" href="#">Comenzar ya</a>
             </div>
           </div>
-
-        
+          <div class="col-md-6 order-md-1">
+            <img src="img/convencer.png" style="float: right;" alt="persuasion" height="350px" width="513px">
+          </div>
         </div>
-        <!-- /END THE FEATURETTES -->
+
+        <div class="b-example-divider"></div>
+
+        <div class="row featurette col-md-12">
+          <div class="col-md-6" style=" align-items: left;">
+            <div class="col-md-9" style="text-align: left;float: right;"><br><br>
+              <h3 style="margin-top: 1em;">Varias personas, varios mensajes simultáneos.</h3>
+              <div class="d-flex justify-content-center align-items-center">
+                <p class="lead" style="text-align: left;">¿Bienvenido al A/B Testing! Pruebas tus argumentos comerciales con distintas audiencias para diseñar campañas publicitarias personalizadas por audiencia y localización. Prueba una agencia 100% enfocada en la medición de marketing digital.</p>
+              </div>
+              <a class="btn btn-lg mb-5 rounded-pill" style="float: left;background-color: #000;color: #fff;" href="#">Ampliar información</a>
+            </div>
+          </div>
+          <div class="col-md-3 flex-fill">
+           <img src="img/people.png" alt="persuasion" height="350px" width="513px" style="margin-top: 3em;">
+          </div>
+        </div>
+      </div>
+
+      <div class="b-example-divider"></div>
+
+      <div class="text-center">
+      <h2 style="margin-bottom: 3rem;">Clientes que confían en nosotros</h2>
+      <button class="btn btn-primary rounded-pill" style="background-color: #792f68; padding: 1rem 3rem;">Ver más</button>
+      </div>
+
+      <div class="b-example-divider"></div>
       
+      <div style="background-color:#92cbdc; padding-top:3rem;">
+        <div class="row featurette col-md-12">
+          <div class="d-flex col-md-6 justify-content-end">
+            <img src="img/Marketing-Outsourcing-ok-1024x833.png" width="65%" style="margin-left: 3em;margin-bottom: 2em;">
+          </div>
+          <div class="col-md-6" style="align-items:center; text-align:left; color:#fff;">
+            <h3>Marketing outsourcing</h3>
+            <div class="d-flex justify-content-center align-items-center">
+              <p class="lead" style="text-align: left;">No gastes tiempo en:<br>seleccionar, formar, medir a tu equipo. Contrata expertos formados con una agencia apoyándolos.</p>
+            </div>
+            <a class="btn btn-lg mb-5 rounded-pill" style="float: left;background-color: #fff;" href="#">Comenzar ya</a>
+          </div>
+        </div>
+      </div>
+      
+      <div style="background-color:  #7F00EE; padding-bottom: 3rem;">
+        <div class="row featurette col-md-12">
+          <div class="col-md-6" style=" align-items:left;">
+            <div class="col-md-6" style="text-align:left; float:right;">
+              <h3 style="margin-top: 1em;color: #fff;">Amamos lo que hacemos:</h3>
+              <div class="d-flex justify-content-center align-items-center">
+                <p class="lead" style="text-align:left; color:#fff;">SEO, SEM, Gestión de comunidades, Brand content, Email Marketing, Ecommerce, Landings, User experience, Optimización de conversiones…</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex justify-content-start">
+            <img src="img/Amamos-lo-que-Hacemos-ok-1024x496.png" width="70%" style="margin-top: 1em;margin-bottom: 2em;">
+          </div>
+        </div>
+      </div>
+
+      <div class="b-example-divider"></div>
+
+      <div class="container">
+        <h2 class="fs-2" style="color:#8300E9; font-weight:bold; margin-bottom:2.5rem;">Facebook, Twitter & Linkedin Social Ads</h2>
+        <p>Producción, edición y difusión de vídeos para Facebook, Twitter, linkedin…<br>
+        A/B Testing con vídeos/gifs para campañas de pago. ¡Prueba tus argumentos comerciales!<br>
+        Agencia de marketing digital 360.<br>
+        Comienza ya con la publicidad en redes sociales de la mano de una agencia experta en Marketing digital.</p>
+        <h2 class="fs-2" style="color:#8300E9; font-weight:bold; margin-bottom:2.5rem;">Instagram Social Ads – Publicidad en Instagram</h2>
+        <p>Creamos historias que llaman la atención y probamos su potencial de conversión con Stories & Post de pago en campañas nativas. Somos una agencia de marketing digital especialista en gestión de campañas de publicidad en redes sociales.</p>
       </div>
       
       <div class="b-example-divider"></div>
-      <!-- /.container -->
+
+      <div style="background: linear-gradient(180deg, #9B59FF, #0C71C3); padding: 5rem 0;">
+        <h3 style="color: white;" class="d-flex justify-content-center mb-5 display-7">Casos de éxito</h3>
+        <div id="myCarousel2" class="carousel slide mb-6" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#myCarousel2"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel2"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel2"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item casosexito active">
+              <div class="carousel-caption"   >
+                <p style="color: white;" class="d-flex justify-content-center mb-5 display-3">"Son la agencia que utilizamos para nuestras campañas más complejas en los países más competitivos"</p>
+                <small style="color: white;">José Manuel Pastor</small>
+              </div>
+            </div>
+            <div class="carousel-item casosexito">
+              <div class="carousel-caption"   >
+                <p  style="color: white;"  class="d-flex justify-content-center mb-5 display-3">“Hasta que comenzamos a trabajar con Comunicare no entendíamos la razón de invertir en todos los canales. Seguimos sin entenderlo pero los resultados no dejan dudas”</p>
+                <small style="color: white;">Carmen Flores</small>
+              </div>
+            </div>
+            <div class="carousel-item casosexito">
+              <div class="carousel-caption"   >
+                <p style="color: white;" class="d-flex justify-content-center mb-5 display-3">“Comunicare ha sido la única agencia que nos ha proporcionado estudios de mercado y consultorías a un precio razonable y que además incluían un detallado plan de marketing. Nuestra mayor sorpresa fue lanzar y comprobar que funcionaba”</p>
+                <small style="color: white;">Gonzalo Cebrián</small>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#myCarousel2"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarousel2"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      
+      <div class="b-example-divider"></div>    
+
+      <div class="col-lg-6 col-xxl-4 my-5 mx-auto">
+        <div class="d-grid gap-2">
+          <button style="background-color: #792f68;" class="btn btn-primary rounded-pill" type="button">Ver todos nuestros certificados</button>
+        </div>
+      </div>
+
+      <div class="b-example-divider"></div>
+
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 text-bg-light">
+              <div class="card-header py-3">
+                <img src="img/img_card_01.jpg" alt="comunicare2" height="150px" width="250px">
+              </div>
+              <div class="card-body">
+                <h2 class="card-title pricing-card-title"><small class="text-body-primary fw-dark">Agencia de Marketing</small></h2>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Comunicare es una agencia especializada en marketing digital 360º en Madrid. Nuestra misión es conocer tus necesidades para poder definir una estrategia digital personalizada y ofrecerte los mejores resultados. Tus objetivos son los nuestros.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 text-bg-light">
+              <div class="card-header py-3">
+                <img src="img/img_card_02.jpg" alt="comunicare2" height="150px" width="250px">
+              </div>
+              <div class="card-body">
+                <h2 class="card-title pricing-card-title"><small class="text-body-primary fw-dark">Agencia de Marketing online</small></h2>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Nuestra agencia está especializada en ofrecer servicios integrales, relacionados con el posicionamiento SEO en buscadores, hacer que tu web sea visible y esté bien posicionada en los motores de búsqueda, a través de SEO, Keywords o Backlinks. Contamos con un equipo propio para realizar la mejor estrategia SEO, SEM y Social Media.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 text-bg-light">
+              <div class="card-header py-3">
+                <img src="img/img_card_03.jpg" alt="comunicare2" height="150px" width="250px">
+              </div>
+              <div class="card-body">
+                <h2 class="card-title pricing-card-title"><small class="text-body-primary fw-dark">Marketing online Madrid</small></h2>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Comunicare persigue el objetivo de solucionar las demandas trazando estrategias de marketing online o planes de acción especificando el mensaje a transmitir y analizando los resultados de búsqueda. También se involucra en otros ámbitos como la distribución, el precio o incluso la definición del productos. Las 4 Ps del marketing.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 text-bg-light">
+              <div class="card-header py-3">
+                <img src="img/img_card_04.jpg" alt="comunicare2" height="150px" width="250px">
+              </div>
+              <div class="card-body">
+                <h2 class="card-title pricing-card-title"><small class="text-body-primary fw-dark">Agencias de Marketing Madrid</small></h2>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Agencia de marketing especializada en estudiar el mercado, para poder planificar las campañas especializadas a cada cliente, optimizar, medir y evaluar resultados es la mejor manera de alcanzar los objetivos. La estrategia especializada es el punto de partida para alcanzar tus objetivos.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 text-bg-light">
+              <div class="card-header py-3">
+                <img src="img/img_card_05.jpg" alt="comunicare2" height="150px" width="250px">
+              </div>
+              <div class="card-body">
+                <h2 class="card-title pricing-card-title"><small class="text-body-primary fw-dark">Agencia de Marketing digital Madrid</small></h2>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Agencia de marketing digital especializada en servicios de SEO, SEM, Gestión de redes sociales (Instagram, Twitter, Facebook, LinkedIn) Te ayudamos a vender tus productos o servicios a nivel online y offline, gracias a nuestras estrategias de captación de clientes.
+                  <br>
+                  Somos muy creativos, déjanos pensar por ti.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 text-bg-light">
+              <div class="card-header py-3">
+                <img src="img/img_card_06.jpg" alt="comunicare2" height="150px" width="250px">
+              </div>
+              <div class="card-body">
+                <h2 class="card-title pricing-card-title"><small class="text-body-primary fw-dark">Empresa de Marketing y Publicidad</small></h2>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Para marcar la diferencia, somos una agencia transparente, que desarrolla campañas especializadas y evalúa resultados diariamente. Medimos cada detalle mes a mes y te enviamos un informe con resultados para que seas partícipe de la estrategia.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="b-example-divider"></div>
+      
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center" style=" background-color: transparent;">
+          <form style="row-gap: 0.5em;">
+            <h2 class="d-flex justify-content-center align-items-center" style="margin-bottom: 4rem; color: grey;"><b>¿Quieres recibir un presupuesto personalizado?</b></h2>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellidos *" required><br>
+            <input type="email" id="email" name="email" placeholder="Correo electrónico *" required><br>
+            <input type="tel" id="telefono" name="telefono" pattern="[6-9]{1}[0-9]{8}" placeholder="Teléfono *" required><br>
+            <textarea rows='3' cols='100' maxlength="250" placeholder="Mensaje"></textarea><br>
+
+            <div class="form-check" style="margin: 2rem 0;">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Autorizo el tratamiento de mis datos para que respondan a la consulta que he realizado.*<br>
+                <small>Responsable del fichero: Safe Marketing Online, S.L. Finalidad: envío de información sobre productos y servicios propios al suscrito. Legitimación: consentimiento. Destinatarios: No se comunicarán los datos a terceros. Derechos: acceder, rectificar y suprimir los datos, así como otros derechos, como se explica en la información adicional. Puede consultar información adicional y detallada en nuestra <a href="#">Política de Privacidad</a>.</small>
+              </label>
+            </div>
+            <input type="submit" id="Enviar" value="Enviar" class="btn btn-secondary">
+          </form>
+        </div>
+      </div>
+
+      <div class="b-example-divider"></div>
+      
       <!-- FOOTER -->
-      <footer class="container">
-        <p class="float-end"><a href="#">Back to top</a></p>
-        <p>
-          &copy; 2017–2025 Company, Inc. &middot;
-          <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
-        </p>
-      </footer>
+        <footer class="bg-dark text-white pt-4 pb-2" style="height: 100%;">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col-md-3 mb-3">
+                  <h5>Mexico</h5>
+                  <p>Email: usa@comunicare.es</p>
+                  <p>Tel: +34 600 123 456</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <h5>Bogota</h5>
+                  <p>Email: usa@comunicare.es</p>
+                  <p>Tel: +34 600 123 456</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <h5>Ciudad de Mexico</h5>
+                  <p>Email: usa@comunicare.es</p>
+                  <p>Tel: +34 600 123 456</p>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                  <h5>Miami</h5>
+                  <p>chile@comunicare.es</p>
+                  <p>Avenida Apoquindo 5950 </p>
+                  <p>Las Condes Santiago de Chile, 7550000, Chile</p>
+                </div>
+              </div>
+              <hr class="bg-light" style="color: #8300E9;">
+              <p class="mb-0">&copy; 2025 Comunicare Todos los derechos reservados.</p>
+            </div>
+        </footer>
     </main>
     <script
       src="assets/dist/js/bootstrap.bundle.min.js"
