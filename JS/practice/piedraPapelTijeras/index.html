@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PiedraPapelTijeras</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+    <h1>✊ Piedra ✋ Papel ✌️ Tijeras</h1>
+
+    <div class="options">
+      <img src="img/piedra.png" alt="Piedra" onclick="jugar('piedra')" />
+      <img src="img/papel.png" alt="Papel" onclick="jugar('papel')" />
+      <img src="img/tijeras.png" alt="Tijeras" onclick="jugar('tijeras')" />
+    </div>
+
+    <div class="elections">
+      <div>
+        <p>👤 Tú</p>
+        <img id="jugadorImg" src="" alt="" />
+      </div>
+      <div>
+        <p>💻 Máquina</p>
+        <img id="maquinaImg" src="" alt="" />
+      </div>
+    </div>
+
+    <p class="result" id="result">Haz tu elección...</p>
+
+    <script src="JS/myScript.js"></script>
+
+  </body>
+</html>

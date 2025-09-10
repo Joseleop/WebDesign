@@ -1,0 +1,119 @@
+html {
+      scroll-behavior: smooth; /* desplazamiento suave */
+    }
+
+    body {
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #f0f4ff, #e6ecf7);
+      color: #333;
+    }
+
+    header {
+      background: #4174ff;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    nav {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+
+    nav a:hover {
+      background: rgba(255,255,255,0.2);
+    }
+
+    main {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      color: #4174ff;
+      font-size: 1.5rem;
+      border-bottom: 2px solid #4174ff;
+      padding-bottom: 0.3rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    a.project-link {
+      display: block;
+      padding: 1rem 1.2rem;
+      background: white;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #4174ff;
+      font-weight: 500;
+      font-size: 1.05rem;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      transition: all 0.25s ease;
+    }
+
+    a.project-link:hover {
+      background: #4174ff;
+      color: white;
+      transform: translateX(6px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    /* Botón flotante */
+    #btn-arriba {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #4174ff;
+      color: white;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    #btn-arriba:hover {
+      background: #4174ff;
+      transform: translateY(-3px);
+    }

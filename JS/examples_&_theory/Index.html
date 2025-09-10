@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JavaScript</title>
+  <title>Teoría y ejemplos de JavaScript</title>
 
   <link rel="stylesheet" href="styles/reset.css">
   <style>
@@ -65,7 +65,7 @@
       <button type="button" onclick="myFunction()">Cambia el párrafo</button>
       <button type="button" onclick="myFunction02()">Vuelve atrás</button>
 
-      <script src="scripts/myScript.js"></script>
+      <!-- El script está en la última línea del main -->
     </section>
 
     <div class="b-example-divider"></div>
@@ -73,10 +73,32 @@
     <section>
       <p>Puedes crear alertas flotantes!!!</p>
       <button type="button" onclick="myFunction03()">¡¡ALARMA!!</button>
+    </section>
 
+    <div class="b-example-divider"></div>
+
+    <section>
+      <p>Podemos añadir eventos. Que llaman a una función cuando ocurre algo</p>
+      <p>Mantén pulsado el ratón sobre el cuadro</p>
+      <img id="changeColor" src="img/green.png" alt="verde" onmouseenter="colorBlue()" onmouseleave="colorGreen()" onmousedown="colorRed()" onmouseup="colorYellow()">
+      <p id="colorText"></p>
+    </section>
+    
+    <div class="b-example-divider"></div>
+
+    <section>
+      <p>Arrays</p>
+      <button type="button" onclick="function04()">Qué fruta quieres?</button>
+    </section>
+    
+    <div class="b-example-divider"></div>
+
+    <section>
 
     </section>
 
+
+    <script src="scripts/myScript.js"></script>
   </main>
 </body>
 </html>
